@@ -1,0 +1,180 @@
+"""
+disease_library.py  –  Disease Library page for AgriVision Paddy Inspector.
+
+Reads all content from app/data/advisory.json so an agriculture expert can
+update disease descriptions, symptoms, conditions and management notes without
+touching any Python code.
+
+Tamil text flagged tamil_needs_validation=true is marked with a visible
+"Needs expert validation" tag so the user knows not to rely on it in the field.
+"""
+
+import streamlit as st
+from core.advisory import ADVICE
+
+# ---------------------------------------------------------------------------
+# Cause-type badge styles  (background, text colour, emoji)
+# ---------------------------------------------------------------------------
+_CAUSE_STYLE = {
+    "Fungal":    ("#e8f5e9", "#1b5e20", "🍄 Fungal"),
+    "Bacterial": ("#fff3e0", "#e65100", "🦠 Bacterial"),
+    "Viral":     ("#f3e5f5", "#4a148c", "🔬 Viral"),
+    "Various":   ("#f5f5f5", "#424242", "⚠️ Various causes"),
+    "None":      ("#e8f5e9", "#1b5e20", "✅ No disease"),
+}
+
+_VALIDATION_TAG = (
+    '<span style="background:#fff3e0;color:#e65100;border:1px solid #e65100;'
+    'border-radius:4px;padding:1px 7px;font-size:0.75em;font-weight:bold;">'
+    "⚠️ Needs expert validation"
+    "</span>"
+)
+
+
+def _cause_badge(cause_type: str) -> str:
+    """Return an inline HTML badge for the cause type."""
+    bg, fg, label = _CAUSE_STYLE.get(
+        cause_type, ("#f5f5f5", "#424242", f"🔍 {cause_type}")
+    )
+    return (
+        f'<span style="background:{bg};color:{fg};border:1px solid {fg};'
+        f'border-radius:12px;padding:3px 12px;font-size:0.85em;'
+        f'font-weight:bold;">{label}</span>'
+    )
+
+
+def _disease_card(label: str, info: dict) -> None:
+    """Render one full disease card inside a bordered container."""
+    name_en  = info.get("name", label)
+    name_ta  = info.get("name_ta", "")
+    sci      = info.get("scientific", "")
+    cause    = info.get("cause_type", "")
+    needs_val = info.get("tamil_needs_validation", True)
+
+    with st.container(border=True):
+        # --- Header row -------------------------------------------------------
+        head_l, head_r = st.columns([3, 2])
+        with head_l:
+            header = f"### {name_en}"
+            if sci:
+                header += f"\n##### *{sci}*"
+            st.markdown(header)
+        with head_r:
+            st.markdown(
+                f'<div style="margin-top:12px;">'
+                f'{_cause_badge(cause)}</div>',
+                unsafe_allow_html=True,
+            )
+            if name_ta:
+                st.markdown(
+                    f'<div style="color:#555;font-size:1.05em;margin-top:4px;">'
+                    f'{name_ta}</div>',
+                    unsafe_allow_html=True,
+                )
+
+        # --- Tabs: Symptoms | Conditions | Management -------------------------
+        tab_sym, tab_cond, tab_mgmt = st.tabs(
+            ["🔍 Symptoms", "🌡️ Conditions", "🌱 Management"]
+        )
+
+        with tab_sym:
+            col_en, col_ta = st.columns(2)
+            with col_en:
+                st.markdown("**English**")
+                st.write(info.get("symptoms_en", "—"))
+            with col_ta:
+                st.markdown(
+                    "**Tamil** &nbsp;"
+                    + (_VALIDATION_TAG if needs_val else ""),
+                    unsafe_allow_html=True,
+                )
+                st.write(info.get("symptoms_ta", "—"))
+
+        with tab_cond:
+            col_en, col_ta = st.columns(2)
+            with col_en:
+                st.markdown("**English**")
+                st.write(info.get("conditions_en", "—"))
+            with col_ta:
+                st.markdown(
+                    "**Tamil** &nbsp;"
+                    + (_VALIDATION_TAG if needs_val else ""),
+                    unsafe_allow_html=True,
+                )
+                st.write(info.get("conditions_ta", "—"))
+
+        with tab_mgmt:
+            col_en, col_ta = st.columns(2)
+            with col_en:
+                st.markdown("**English**")
+                # management_en may contain numbered list as a string
+                st.write(info.get("en_full", "—"))
+            with col_ta:
+                st.markdown(
+                    "**Tamil** &nbsp;"
+                    + (_VALIDATION_TAG if needs_val else ""),
+                    unsafe_allow_html=True,
+                )
+                st.write(info.get("ta_full", "—"))
+
+            st.caption(
+                "⚠️ No pesticide doses are shown. Doses and product choices must "
+                "come from the current TNAU Crop Protection Guide or a licensed "
+                "agriculture officer."
+            )
+
+
+# ---------------------------------------------------------------------------
+# Main page function
+# ---------------------------------------------------------------------------
+
+def show_disease_library() -> None:
+    """Render the full Disease Library page."""
+    st.header("📚 Disease Library")
+    st.caption(
+        "Reference guide for paddy leaf diseases detected by this app. "
+        "Content is stored in **app/data/advisory.json** — an agriculture "
+        "expert can update descriptions without touching any code."
+    )
+
+    # Search bar
+    search = st.text_input(
+        "🔍 Search",
+        placeholder="Type a disease name, cause type, or symptom keyword…",
+    )
+
+    # Filter
+    q = search.strip().lower()
+    matches = []
+    for label, info in ADVICE.items():
+        if not q:
+            matches.append(label)
+            continue
+        haystack = " ".join([
+            info.get("name", ""),
+            info.get("name_ta", ""),
+            info.get("scientific", ""),
+            info.get("cause_type", ""),
+            info.get("symptoms_en", ""),
+            info.get("conditions_en", ""),
+            info.get("en_full", ""),
+        ]).lower()
+        if q in haystack:
+            matches.append(label)
+
+    if not matches:
+        st.info("No diseases match your search. Try a different keyword.")
+        return
+
+    st.caption(f"Showing {len(matches)} of {len(ADVICE)} disease(s).")
+
+    # Render one card per matched disease
+    for label in matches:
+        _disease_card(label, ADVICE[label])
+
+    st.divider()
+    st.caption(
+        "Tamil text marked **⚠️ Needs expert validation** has not yet been "
+        "reviewed by a qualified Tamil-speaking agriculture officer. "
+        "Do not use it for official extension or printed material until validated."
+    )

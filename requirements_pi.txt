@@ -1,0 +1,25 @@
+# AgriVision Paddy Inspector - Raspberry Pi Requirements
+# Optimized for Raspberry Pi OS (64-bit Bookworm / Bullseye) on Raspberry Pi 4 / 5
+
+# Streamlit web UI engine
+streamlit>=1.30.0
+
+# Lightweight TensorFlow Lite Edge Runtime (no full TensorFlow required)
+tflite-runtime>=2.14.0
+
+# Headless OpenCV optimized for ARM without X11 GUI overhead
+opencv-python-headless>=4.8.0
+
+# Core Imaging & Numerics
+pillow>=10.0.0
+numpy>=1.24.0,<2.0.0
+pandas>=2.0.0
+scipy>=1.11.0
+
+# Visualizations & Maps
+altair>=5.0.0
+folium>=0.15.0
+streamlit-folium>=0.16.0
+
+# Networking & Telemetry
+requests>=2.31.0

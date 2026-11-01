@@ -1,0 +1,82 @@
+{
+  "_meta": {
+    "version": 1,
+    "note": "Edit disease content here. Tamil text tagged needs_validation=true must be reviewed by a qualified agriculture officer before field use. Never add pesticide doses or chemical concentrations to this file.",
+    "classes": ["blast", "blb", "brown_spot", "healthy", "other"]
+  },
+  "blast": {
+    "name_en": "Rice Blast",
+    "name_ta": "குலை நோய்",
+    "scientific": "Magnaporthe oryzae",
+    "cause_type": "Fungal",
+    "symptoms_en": "Spindle-shaped lesions with grey or white centres and brown or reddish-brown borders on leaves. In severe cases the neck of the panicle rots (neck blast), causing the panicle to fall over.",
+    "symptoms_ta": "இலைகளில் நடுவில் சாம்பல் அல்லது வெள்ளை நிறமும் ஓரங்களில் பழுப்பு நிறமும் கொண்ட ஈட்டி வடிவ புள்ளிகள். கடுமையான நிலையில் கதிர்த் தண்டு அழுகி கதிர் சாய்கிறது (neck blast).",
+    "conditions_en": "Favoured by cool nights (15-20 °C), high humidity, heavy dew, and excess nitrogen fertiliser. Poorly drained fields and dense canopies increase risk.",
+    "conditions_ta": "குளிர்ந்த இரவுகள் (15-20 °C), அதிக ஈரப்பதம், தண்ணீர் தேக்கம் மற்றும் அதிக தழைச்சத்து உரம் நோயை அதிகரிக்கும்.",
+    "management_en": "1. Confirm the diagnosis with a local agriculture officer before spraying.\n2. Follow the fungicide recommended in the current TNAU crop protection guide — do not choose a product or dose from this app.\n3. Avoid excess nitrogen, especially near panicle initiation.\n4. Maintain proper water management (intermittent irrigation).\n5. Use resistant varieties recommended for your district.",
+    "management_ta": "1. மருந்து தெளிப்பதற்கு முன் வேளாண் அலுவலரிடம் உறுதி செய்யவும்.\n2. தற்போதைய TNAU வழிகாட்டுதலில் பரிந்துரைக்கப்பட்ட பூஞ்சைக்கொல்லியை மட்டுமே பயன்படுத்தவும்.\n3. குறிப்பாக கதிர் உருவாகும் தருணத்தில் அதிக தழைச்சத்தை தவிர்க்கவும்.\n4. இடைவெளி நீர்ப்பாசனம் கடைப்பிடிக்கவும்.\n5. உங்கள் மாவட்டத்திற்கு பரிந்துரைக்கப்பட்ட எதிர்ப்பு ரக நெல்லை பயிரிடவும்.",
+    "advisory_short_en": "Confirm with an agriculture officer and use the fungicide recommended in the TNAU guide. Avoid excess nitrogen and manage field water.",
+    "advisory_short_ta": "வேளாண் அலுவலரிடம் உறுதிசெய்து, TNAU பரிந்துரைத்த பூஞ்சைக்கொல்லியைப் பயன்படுத்தவும். அதிக தழைச்சத்து உரத்தைத் தவிர்க்கவும்; வயலில் நீர் மேலாண்மையைப் பின்பற்றவும்.",
+    "tamil_needs_validation": true
+  },
+  "blb": {
+    "name_en": "Bacterial Leaf Blight",
+    "name_ta": "பாக்டீரியல் இலைக்கருகல்",
+    "scientific": "Xanthomonas oryzae pv. oryzae",
+    "cause_type": "Bacterial",
+    "symptoms_en": "Yellow-to-white water-soaked stripes starting from the leaf tip or edges, progressing downward. Wilting and drying of the whole leaf in severe cases (kresek phase in seedlings).",
+    "symptoms_ta": "இலை நுனி அல்லது ஓரங்களிலிருந்து தொடங்கி கீழ் நோக்கி பரவும் மஞ்சள்-வெள்ளை நீர் ஊறிய கோடுகள். கடுமையான நிலையில் முழு இலையும் வாடி உலர்கிறது.",
+    "conditions_en": "Spreads through infected water, rain, and wind. High temperatures (25-34 °C) with high humidity and storm damage favour the disease. Flood water from infected fields is a common source.",
+    "conditions_ta": "நோய்வாய்பட்ட நீர், மழை மற்றும் காற்று மூலம் பரவுகிறது. அதிக வெப்பம் (25-34 °C), அதிக ஈரப்பதம் மற்றும் புயல் சேதம் நோயை அதிகரிக்கும்.",
+    "management_en": "1. This is a BACTERIAL disease — a fungicide will not work. Consult your agriculture officer for bactericide options.\n2. Drain stagnant water from the field promptly.\n3. Reduce nitrogen fertiliser application.\n4. Avoid working in wet fields as it spreads bacteria.\n5. Use certified disease-free seed next season.",
+    "management_ta": "1. இது பாக்டீரியா நோய் — பூஞ்சைக்கொல்லி பயனில்லை. வேளாண் அலுவலரிடம் பாக்டீரியா மருந்து குறித்து ஆலோசனை பெறவும்.\n2. வயலில் தேங்கியுள்ள நீரை உடனடியாக வடிக்கவும்.\n3. தழைச்சத்து உரத்தை குறைக்கவும்.\n4. நனைந்த வயலில் வேலை செய்வதை தவிர்க்கவும்.\n5. அடுத்த பருவத்தில் நோயற்ற சான்றளிக்கப்பட்ட விதைகளை பயன்படுத்தவும்.",
+    "advisory_short_en": "This is NOT a fungal disease, so a fungicide will not help. Follow the agriculture officer's advice, drain standing water and reduce nitrogen.",
+    "advisory_short_ta": "இது பூஞ்சை நோய் அல்ல. வேளாண் அலுவலரின் ஆலோசனைப்படி பரிந்துரைக்கப்பட்ட மருந்தைப் பயன்படுத்தவும். தேங்கிய நீரை வடித்து, தழைச்சத்தைக் குறைக்கவும்.",
+    "tamil_needs_validation": true
+  },
+  "brown_spot": {
+    "name_en": "Brown Spot",
+    "name_ta": "பழுப்பு புள்ளி நோய்",
+    "scientific": "Bipolaris oryzae",
+    "cause_type": "Fungal",
+    "symptoms_en": "Small round to oval brown spots with a yellow halo on leaves, glumes, and grains. Often linked to nutrient deficiency (especially potassium and silicon) or drought stress.",
+    "symptoms_ta": "இலைகள், உமி மற்றும் தானியங்களில் மஞ்சள் வளையத்துடன் கூடிய சிறிய வட்ட அல்லது நீள்வட்ட பழுப்பு புள்ளிகள். பொதுவாக ஊட்டச்சத்து குறைபாடு (குறிப்பாக பொட்டாசியம், சிலிக்கான்) அல்லது வறட்சி அழுத்தத்தோடு தொடர்புடையது.",
+    "conditions_en": "Nutrient-stressed, drought-stressed, or flooded soils. Warm temperatures (25-35 °C) with high humidity. Infected seed is a primary source.",
+    "conditions_ta": "ஊட்டச்சத்து குறைபாடு உள்ள, வறட்சி அல்லது நீரில் மூழ்கிய மண். வெப்பமான வெப்பநிலை (25-35 °C) மற்றும் அதிக ஈரப்பதம். நோய்வாய்பட்ட விதைகள் முதன்மை ஆதாரமாக உள்ளன.",
+    "management_en": "1. Correct nutrient deficiencies (potassium, silicon) as guided by a soil test and your agriculture officer.\n2. Use fungicide seed treatment next season as recommended in the TNAU guide.\n3. For standing crop with higher severity, consult your officer for in-season fungicide options.\n4. Maintain proper water levels — avoid both drought and waterlogging.",
+    "management_ta": "1. மண் பரிசோதனை மற்றும் வேளாண் அலுவலர் வழிகாட்டுதலின்படி ஊட்டச்சத்து குறைபாட்டை (பொட்டாசியம், சிலிக்கான்) சரிசெய்யவும்.\n2. அடுத்த பருவத்தில் TNAU வழிகாட்டுதல்படி விதை நேர்த்தி செய்யவும்.\n3. நிற்கும் பயிரில் தீவிரம் அதிகமாக இருந்தால் வேளாண் அலுவலரிடம் மருந்து குறித்து ஆலோசனை பெறவும்.\n4. சரியான நீர் மட்டத்தை பராமரிக்கவும்.",
+    "advisory_short_en": "Often linked to nutrient stress (for example potassium). For higher severity, use a fungicide as per the TNAU guide. Consider seed treatment next season.",
+    "advisory_short_ta": "பொட்டாசியம் போன்ற ஊட்டச்சத்துக் குறைபாடு இருக்கலாம். தீவிரமாக இருந்தால் வேளாண் அலுவலரின் பரிந்துரைப்படி பூஞ்சைக்கொல்லி பயன்படுத்தவும்; அடுத்த பருவத்தில் விதை நேர்த்தி செய்யவும்.",
+    "tamil_needs_validation": true
+  },
+  "healthy": {
+    "name_en": "Healthy",
+    "name_ta": "ஆரோக்கியமான இலை",
+    "scientific": "",
+    "cause_type": "None",
+    "symptoms_en": "No visible disease symptoms. Leaf appears uniformly green without spots, stripes, or discolouration.",
+    "symptoms_ta": "தெரியும் நோய் அறிகுறிகள் இல்லை. இலை சீரான பச்சை நிறத்தில் புள்ளிகள், கோடுகள் அல்லது நிற மாற்றமின்றி தோன்றுகிறது.",
+    "conditions_en": "No disease conditions present.",
+    "conditions_ta": "நோய் நிலைமைகள் இல்லை.",
+    "management_en": "No spray needed. Keep scouting regularly — inspect the field every 7-10 days. Record any early symptoms.",
+    "management_ta": "மருந்து தெளிக்க வேண்டாம். தொடர்ந்து கண்காணிக்கவும் — ஒவ்வொரு 7-10 நாட்களுக்கு ஒருமுறை வயலை ஆய்வு செய்யவும். ஆரம்பகால அறிகுறிகளை பதிவு செய்யவும்.",
+    "advisory_short_en": "No disease detected. No spray needed. Keep scouting regularly.",
+    "advisory_short_ta": "இலை ஆரோக்கியமாக உள்ளது. மருந்து தெளிக்க வேண்டாம்; தொடர்ந்து கண்காணிக்கவும்.",
+    "tamil_needs_validation": true
+  },
+  "other": {
+    "name_en": "Other disease or damage",
+    "name_ta": "வேறு நோய் அல்லது பாதிப்பு",
+    "scientific": "",
+    "cause_type": "Various",
+    "symptoms_en": "The predicted class does not match blast, BLB, or brown spot confidently. Possible causes include: Tungro virus (yellow-orange discolouration, stunting), Leaf Smut (black powdery pustules), Leaf Scald (zonate lesions), Narrow Brown Spot, or nutrient deficiency. Insect damage can also appear similar.",
+    "symptoms_ta": "முன்கணிக்கப்பட்ட வகுப்பு குலை நோய், BLB அல்லது பழுப்பு புள்ளி நோயுடன் நம்பகமாக பொருந்தவில்லை. சாத்தியமான காரணங்கள்: துங்ரோ வைரஸ் (மஞ்சள்-ஆரஞ்சு நிறமாற்றம், குறுகிய வளர்ச்சி), இலை வெடிப்பு (கரும் தூள் புடைப்புகள்), இலை சுருட்டு நோய், குறுகிய பழுப்பு புள்ளி, அல்லது ஊட்டச்சத்து குறைபாடு.",
+    "conditions_en": "Varies by actual disease. Show the leaf to your local agriculture officer for accurate diagnosis.",
+    "conditions_ta": "உண்மையான நோயைப் பொறுத்து மாறுபடும். துல்லியமான நோய் கண்டறிதலுக்கு அருகிலுள்ள வேளாண் அலுவலரிடம் இலையை காட்டவும்.",
+    "management_en": "1. This app cannot reliably distinguish between multiple 'other' diseases.\n2. Do not spray any chemical without an accurate diagnosis.\n3. Take a clear photo and a physical leaf sample to the nearest Krishi Vigyan Kendra (KVK) or agriculture office.",
+    "management_ta": "1. இந்த செயலி பல 'வேறு' நோய்களுக்கு இடையே நம்பகமாக வேறுபடுத்த முடியாது.\n2. துல்லியமான நோய் கண்டறிதலின்றி எந்த மருந்தும் தெளிக்காதீர்கள்.\n3. தெளிவான புகைப்படம் மற்றும் இலை மாதிரியை அருகிலுள்ள KVK அல்லது வேளாண் அலுவலகத்திற்கு கொண்டு செல்லவும்.",
+    "advisory_short_en": "Possibly tungro, leaf smut, leaf scald, narrow brown spot or a nutrient problem. Show the leaf to the nearest agriculture officer.",
+    "advisory_short_ta": "வேறு நோய் அல்லது பாதிப்பு இருக்கலாம் (துங்ரோ, இலைக்கருகல் போன்றவை). அருகிலுள்ள வேளாண் அலுவலரை அணுகவும்.",
+    "tamil_needs_validation": true
+  }
+}

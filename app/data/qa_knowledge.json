@@ -1,0 +1,1756 @@
+{
+  "_meta": {
+    "version": 2,
+    "title": "AgriVision Verified Trilingual Q&A Knowledge Base for Paddy Diseases",
+    "guideline": "TNAU Crop Production Guide & Agriculture Officer Advisory",
+    "safety": "Zero pesticide brand names, zero chemical doses, zero prices"
+  },
+  "brown_spot": {
+    "name_en": "Brown Spot",
+    "name_ta": "பழுப்பு புள்ளி நோய்",
+    "name_tanglish": "Brown Spot (Pazhuppu Pulli Noi)",
+    "topics": {
+      "symptoms": {
+        "title_en": "Symptoms of Brown Spot",
+        "title_ta": "பழுப்பு புள்ளி நோயின் அறிகுறிகள்",
+        "title_tanglish": "Brown Spot noiyin arikurigalum thotramum",
+        "keywords_en": [
+          "symptom",
+          "symptoms",
+          "sign",
+          "signs",
+          "look like",
+          "appearance",
+          "spots",
+          "oval spots",
+          "yellow halo",
+          "sesame"
+        ],
+        "keywords_ta": [
+          "அறிகுறி",
+          "அறிகுறிகள்",
+          "தோற்றம்",
+          "புள்ளி",
+          "மஞ்சள் வளையம்",
+          "எள் வடிவம்"
+        ],
+        "keywords_tanglish": [
+          "symptoms",
+          "symptoms enna",
+          "epdi irukkum",
+          "eppadi irukkum",
+          "pulligal",
+          "thotram",
+          "signs"
+        ],
+        "answer_en": "• Dark brown, oval or circular sesame seed-shaped spots appear on leaf blades.\n• Lesions typically have a light grey or whitish centre surrounded by a yellow halo.\n• Severe infections coalesce, causing leaf drying, blighting, and discoloured grains.",
+        "answer_ta": "• இலைகளில் எள் போன்ற உருண்டை அல்லது நீள்வட்டப் பழுப்பு நிறப் புள்ளிகள் தோன்றும்.\n• புள்ளிகளின் நடுப்பகுதி சாம்பல் நிறமாகவும், சுற்றிலும் மஞ்சள் நிற வளையமும் காணப்படும்.\n• அதிகப் பாதிப்பின் போது புள்ளிகள் ஒன்றிணைந்து இலை காய்ந்து சருகாகும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Ilaila sesame seed (ellu) maathiri oval shape-la dark brown pulligal varum.\n• Pulliyin nadu paguthi saambal niramavum, suthi yellow halo-vum irukkum.\n• Athiga paathippu vantha pulligal onna sernthu ilai karugi kaanjidum.\n[Needs expert review]"
+      },
+      "how_it_spreads": {
+        "title_en": "How does Brown Spot spread?",
+        "title_ta": "பழுப்பு புள்ளி நோய் எவ்வாறு பரவுகிறது?",
+        "title_tanglish": "Brown Spot noi eppadi paravum?",
+        "keywords_en": [
+          "spread",
+          "how it spreads",
+          "transmission",
+          "airborne",
+          "seed-borne",
+          "wind",
+          "rain splash",
+          "soil"
+        ],
+        "keywords_ta": [
+          "பரவ",
+          "பரவுதல்",
+          "பரவுகிறது",
+          "எப்படி பரவுகிறது",
+          "எவ்வாறு பரவுகிறது",
+          "காற்று",
+          "விதை மூலம்"
+        ],
+        "keywords_tanglish": [
+          "spread",
+          "spread agum",
+          "epadi spread agum",
+          "eppadi paravum",
+          "paravum",
+          "paravuthu",
+          "kaathula paravuma"
+        ],
+        "answer_en": "• The fungal pathogen is primary seed-borne and survives on infected seeds and crop stubble.\n• Airborne fungal spores spread secondary infection from plant to plant through wind and rain splash.\n• Poorly drained soils, nutrient-deficient fields, and water stress accelerate spread.",
+        "answer_ta": "• இது முதன்மையாக பாதிக்கப்பட்ட விதைகள் மற்றும் பயிர்க் கழிவுகள் மூலம் பரவுகிறது.\n• காற்றில் அடித்துச் செல்லப்படும் பூஞ்சை வித்துக்கள் மற்றும் மழைத்துளிகள் மூலம் அடுத்தடுத்த பயிர்களுக்குப் பரவுகிறது.\n• ஊட்டச்சத்துக் குறைபாடு மற்றும் நீர் தேங்கும் வயல்களில் இந்நோய் வேகமாகப் பரவும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Intha poonjai noi mukkiyama paathikkapatta vidhai mattrum payir thaligal moolama varuthu.\n• Kaathula vara fungal spores mattrum mazhai thuligal moolama adutha payirukku vegama paravum.\n• Chathu kuraivaana mannilum thanni thangi nirkum vayalilum vegama paravum.\n[Needs expert review]"
+      },
+      "prevention": {
+        "title_en": "How to prevent Brown Spot and limit spread?",
+        "title_ta": "பழுப்பு புள்ளி நோய் பரவுவதை தடுப்பது மற்றும் குறைப்பது எப்படி?",
+        "title_tanglish": "Brown Spot noi thadukka mattrum spread reduce panna enna seiyanum?",
+        "keywords_en": [
+          "prevent",
+          "prevention",
+          "stop",
+          "reduce",
+          "control",
+          "avoid",
+          "spread reduce",
+          "stop spread",
+          "next season",
+          "seed treatment"
+        ],
+        "keywords_ta": [
+          "தடுக்க",
+          "குறைக்க",
+          "பரவுவதை குறைக்க",
+          "கட்டுப்படுத்த",
+          "அடுத்த பருவம்",
+          "விதை நேர்த்தி",
+          "முன்னெச்சரிக்கை"
+        ],
+        "keywords_tanglish": [
+          "thadukka",
+          "kuraikka",
+          "reduce panna",
+          "spread reduce",
+          "spread reduce panna",
+          "epadi spread pannuratha reduce panna",
+          "stop panna",
+          "next season"
+        ],
+        "answer_en": "• Always perform certified seed treatment before sowing as recommended in the TNAU guide.\n• Correct soil deficiencies by applying recommended potash, zinc, and well-decomposed organic manure.\n• Remove crop residue and weed hosts from bunds to prevent carryover of fungal spores to the next season.",
+        "answer_ta": "• விதைப்பதற்கு முன் TNAU பரிந்துரைத்த விதை நேர்த்தி முறையை தவறாமல் பின்பற்றவும்.\n• மண்ணின் வளத்தை அதிகரிக்க பரிந்துரைக்கப்பட்ட சாம்பல் சத்து, துத்தநாகம் மற்றும் இயற்கை உரங்களை இடவும்.\n• அடுத்த பருவத்திற்கு நோய் பரவாமல் தடுக்க வயல் வரப்புகளிலுள்ள களைகளையும் பயிர்க் கழிவுகளையும் அகற்றவும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Vithaikkum munbu TNAU recommend panna vidhai nerthi (seed treatment) kandippa seiyavum.\n• Potash, zinc mattrum iyarkai urangalai sariyaana alavil ittu man satthukalai kaapathunga.\n• Adutha paruvathil varama irukka varappu kalaigalaiyum palaiya payir saavalaigalaiyum azhithuvidavum.\n[Needs expert review]"
+      },
+      "treatment_medicine": {
+        "title_en": "Recommended medicine and spray treatment",
+        "title_ta": "பரிந்துரைக்கப்படும் மருந்து மற்றும் சிகிச்சை",
+        "title_tanglish": "Enna marunthu thelikkanum?",
+        "keywords_en": [
+          "medicine",
+          "spray",
+          "treatment",
+          "cure",
+          "chemical",
+          "fungicide",
+          "what medicine",
+          "what to spray"
+        ],
+        "keywords_ta": [
+          "மருந்து",
+          "தெளிப்பு",
+          "தெளிக்க",
+          "மருந்தளவு",
+          "சிகிச்சை",
+          "பூஞ்சைக்கொல்லி"
+        ],
+        "keywords_tanglish": [
+          "marunthu",
+          "marundhu",
+          "maruthu",
+          "thelikka",
+          "thelikkanum",
+          "adikanum",
+          "spray panna",
+          "spray"
+        ],
+        "answer_en": "• Use only the products and dosage recommended in the current TNAU Crop Production Guide or by your local agriculture officer.\n• Avoid indiscriminate spraying; prioritize correcting soil nutrient stress (potash and zinc).\n• If unsure of the suitable product for your crop stage, ask your agriculture officer.",
+        "answer_ta": "• தற்போதைய தமிழ்நாடு வேளாண்மைப் பல்கலைக்கழக (TNAU) பயிர் உற்பத்தி வழிகாட்டி அல்லது வட்டார வேளாண்மை அலுவலர் பரிந்துரைத்த பூஞ்சைக்கொல்லிகளை மட்டுமே பயன்படுத்தவும்.\n• கண்மூடித்தனமாக மருந்துகளைத் தெளிக்காமல், மண் ஊட்டச்சத்து பற்றாக்குறையைச் சரிசெய்யவும்.\n• சந்தேகம் இருந்தால் உடனடியாக உங்கள் வட்டார வேளாண்மை அலுவலரிடம் ஆலோசனை பெறவும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• TNAU Crop Production Guide illa unga local agriculture officer solra marundhai mattume thelikkavum.\n• Thevaillama chemical spray pannama, potash mattrum zinc satthu kuraipaattai sari seiyavum.\n• Sandhegam iruntha unga velanmai aluvalaridam (agriculture officer) kettu therinthukollavum.\n[Needs expert review]"
+      },
+      "cause": {
+        "title_en": "What causes Brown Spot?",
+        "title_ta": "பழுப்பு புள்ளி நோய் உண்டாகக் காரணம் என்ன?",
+        "title_tanglish": "Brown Spot vara kaaranam enna?",
+        "keywords_en": [
+          "cause",
+          "caused by",
+          "pathogen",
+          "fungus",
+          "fungal",
+          "why",
+          "reason"
+        ],
+        "keywords_ta": [
+          "காரணம்",
+          "ஏன் வருகிறது",
+          "உண்டாக்குவது எது",
+          "பூஞ்சை"
+        ],
+        "keywords_tanglish": [
+          "kaaranam",
+          "yen varuthu",
+          "edhanala varuthu",
+          "pathogen",
+          "fungus"
+        ],
+        "answer_en": "• Caused by the fungal pathogen Bipolaris oryzae (Helminthosporium oryzae).\n• The fungus thrives especially in soils that are poor in nutrients, acidic, or low in potash and micronutrients.\n• Infected seeds and plant debris serve as the initial source of inoculum.",
+        "answer_ta": "• பைபோலாரிஸ் ஒரைசே (Bipolaris oryzae) என்ற பூஞ்சையால் இந்நோய் ஏற்படுகிறது.\n• சத்து குறைந்த, களர் அல்லது பொட்டாஷ் பற்றாக்குறை உள்ள நிலங்களில் இது தீவிரமாகத் தாக்கும்.\n• பாதிக்கப்பட்ட விதைகள் மூலமே பூஞ்சை பயிருக்கு எளிதில் தொற்றுகிறது.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Bipolaris oryzae endra poonjai (fungus) thaan intha noikku mukkiya kaaranam.\n• Chatthu kuraivaana mannilum potash kammiya irukira nilathilum intha poonjai seekiram thakkum.\n• Vidhaiyil irukkum poonjai spores payir mulai vidum pothu thotrugirathu.\n[Needs expert review]"
+      },
+      "favourable_conditions": {
+        "title_en": "Favourable weather and conditions",
+        "title_ta": "நோய் தீவிரமடைய சாதகமான சூழல் மற்றும் வானிலை",
+        "title_tanglish": "Noi athigarikka saadhagamaana weather mattrum soozhnilai",
+        "keywords_en": [
+          "weather",
+          "climate",
+          "temperature",
+          "humidity",
+          "rain",
+          "dew",
+          "favourable",
+          "condition"
+        ],
+        "keywords_ta": [
+          "வானிலை",
+          "சூழல்",
+          "பனி",
+          "ஈரப்பதம்",
+          "வெப்பநிலை",
+          "மழை"
+        ],
+        "keywords_tanglish": [
+          "weather",
+          "climate",
+          "pani",
+          "mazhai",
+          "eerappatham",
+          "season"
+        ],
+        "answer_en": "• High relative humidity (above 85%) combined with temperatures between 25°C and 30°C.\n• Extended leaf wetness caused by continuous morning dew or intermittent cloudy weather.\n• Moisture stress, light sandy soils, and potassium/silicon deficiency in the soil.",
+        "answer_ta": "• 85%க்கும் அதிகமான ஈரப்பதம் மற்றும் 25°C முதல் 30°C வரையிலான வெப்பநிலை சாதகமானது.\n• காலையில் நீடிக்கும் பனிப்பொழிவு மற்றும் மேகமூட்டமான வானிலை பூஞ்சை வளர்ச்சியைத் தூண்டும்.\n• நிலத்தில் வறட்சி அல்லது பொட்டாஷ் சத்து பற்றாக்குறை இந்நோயை விரைவுபடுத்தும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• 85%-kku mela eerappatham mattrum 25°C - 30°C veyil/kulir intha noikku saadhagam.\n• Kaalaile neelikkum pani thuligalum thodar megamootamum poonjaiyai valarkkum.\n• Mannil thanni ilaamal varatchi vanthaalum potash koranjaalum noi athigarikkum.\n[Needs expert review]"
+      },
+      "what_to_do_now": {
+        "title_en": "What to do now (action based on severity)?",
+        "title_ta": "தற்போது செய்ய வேண்டிய உடனடி நடவடிக்கை",
+        "title_tanglish": "Ippo enna pannanum?",
+        "keywords_en": [
+          "what to do now",
+          "severity",
+          "action",
+          "immediate action",
+          "now",
+          "steps"
+        ],
+        "keywords_ta": [
+          "இப்போது என்ன செய்ய வேண்டும்",
+          "உடனடி நடவடிக்கை",
+          "சேத அளவு"
+        ],
+        "keywords_tanglish": [
+          "what to do now",
+          "ippo enna pannanum",
+          "action",
+          "udane enna seiyanum"
+        ],
+        "answer_en": "• For low severity: apply recommended potassium fertilizer and ensure regular irrigation; do not apply excess nitrogen.\n• For moderate severity: inspect leaf canopy closely and consult your agriculture officer for safe biocontrol or management options.\n• For high severity: immediately isolate irrigation flow and seek field advice from the local agriculture officer.",
+        "answer_ta": "• குறைந்த பாதிப்பு: தேவையான பொட்டாஷ் சத்தை இட்டு சீரான நீர்ப்பாசனம் செய்யவும்; யூரியாவை அதிகமாக இட வேண்டாம்.\n• மிதமான பாதிப்பு: பயிரை தொடர்ந்து கண்காணித்து வேளாண் அலுவலரின் வழிகாட்டலின்படி இயற்கை அல்லது பாதுகாப்பு முறைக்குச் செல்லவும்.\n• தீவிர பாதிப்பு: நீர் வெளியேறுவதைக் கட்டுப்படுத்தி உடனே வட்டார வேளாண் அலுவலரை அணுகவும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Kuraivaana paathippu: Potash ittu sariyaana thanni paasanam pannunga; അധിക urea podatheenga.\n• Mithamaana paathippu: Payirai nalla kavanithu velanmai aluvalar aalosanai padi nadavadikkai edunga.\n• Athiga paathippu: Vayal thanniya adutha vayalukku paayividama udane agriculture officer-ah sandhikavum.\n[Needs expert review]"
+      },
+      "yield_effect": {
+        "title_en": "Effect of Brown Spot on grain and crop yield",
+        "title_ta": "மகசூல் மற்றும் தானியத்தின் மீதான பாதிப்பு",
+        "title_tanglish": "Magasool mattrum nel manigal meethu paathippu",
+        "keywords_en": [
+          "yield",
+          "loss",
+          "grain",
+          "chaffy",
+          "damage yield",
+          "harvest",
+          "effect on yield"
+        ],
+        "keywords_ta": [
+          "மகசூல்",
+          "தானியம்",
+          "பதர்",
+          "விளைச்சல் இழப்பு",
+          "பாதிப்பு"
+        ],
+        "keywords_tanglish": [
+          "yield",
+          "magasool",
+          "loss",
+          "padhar",
+          "evlo loss",
+          "vilaiyil izhappu"
+        ],
+        "answer_en": "• Severe infection reduces leaf photosynthetic area, resulting in poor grain filling and unfilled (chaffy) grains.\n• Discolouration of grain glumes reduces market quality, seed viability, and milling recovery.\n• Grain yield losses can range from minor to significant if infected during the panicle emergence stage.",
+        "answer_ta": "• இலைகள் காய்வதால் ஒளிச்சேர்க்கை பாதிக்கப்பட்டு தானியங்கள் மணி பிடிக்காமல் பதராக மாறும்.\n• நெல் மணிகளில் கரும்புள்ளிகள் தோன்றி தானியத்தின் தரம், முளைப்புத் திறன் மற்றும் சந்தை விலையைக் குறைக்கும்.\n• கதிர் வெளிவரும் பருவத்தில் இந்நோய் தாக்கினால் மகசூல் இழப்பு அதிகரிக்கும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Ilai karuguvathal oli serkkai kuraithu nel manigal sariyaaga fill aagama padhar aagum.\n• Nel manigalil karum pulligal thondri seed germination mattrum market vilayai kuraikkum.\n• Kathir varum nerathil noi vanthaal magasool nalla kuraithu vidum.\n[Needs expert review]"
+      },
+      "see_officer": {
+        "title_en": "When and how to contact the Agriculture Officer?",
+        "title_ta": "வேளாண்மை அலுவலரை எப்போது தொடர்பு கொள்ள வேண்டும்?",
+        "title_tanglish": "Agriculture Officer-ah eppo contact pannanum?",
+        "keywords_en": [
+          "officer",
+          "agriculture officer",
+          "extension officer",
+          "contact officer",
+          "aao",
+          "kvk",
+          "expert visit"
+        ],
+        "keywords_ta": [
+          "வேளாண் அலுவலர்",
+          "அலுவலர்",
+          "வேளாண்மை அலுவலர்",
+          "தொடர்பு",
+          "ஆலோசனை"
+        ],
+        "keywords_tanglish": [
+          "officer",
+          "agriculture officer",
+          "velanmai aluvalar",
+          "aao",
+          "kvk",
+          "contact panna"
+        ],
+        "answer_en": "• Contact your Assistant Agriculture Officer (AAO) or local Krishi Vigyan Kendra (KVK) if spots spread across more than 20% of your field.\n• Collect fresh, symptomatic leaf samples in a clean bag to show the officer for accurate visual confirmation.\n• Always verify any proposed chemical intervention with the officer prior to field application.",
+        "answer_ta": "• வயலில் 20%க்கும் அதிகமான பரப்பளவில் புள்ளிகள் பரவினால் உடனடியாக வட்டார வேளாண் அலுவலரைத் தொடர்பு கொள்ளவும்.\n• பாதிக்கப்பட்ட புதிய இலை மாதிரிகளைப் பையில் எடுத்துச் சென்று அலுவலரிடம் நேரடி ஆய்வு பெறவும்.\n• எந்தவொரு மருந்தை வாங்குவதற்கு முன்பும் அலுவலரிடம் ஒப்புதல் பெறுவது சிறந்தது.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Vayalil 20%-kku mela pulligal paravina udane unga block Agriculture Officer (AAO) illa KVK-ah paarkavum.\n• Paathikkapatta pusu ilai sample-ah cover-la eduthutu poi officer-kitta kaattunga.\n• Marunthu vanguvatharku munbu agriculture officer kitta confirmation vangikonga.\n[Needs expert review]"
+      },
+      "similar_diseases": {
+        "title_en": "Similar looking diseases to Brown Spot",
+        "title_ta": "பழுப்பு புள்ளி போன்ற தோற்றமுடைய பிற நோய்கள்",
+        "title_tanglish": "Brown Spot maathiri theriyum matra noigal",
+        "keywords_en": [
+          "similar",
+          "similar disease",
+          "confuse",
+          "looks like",
+          "difference",
+          "narrow brown spot",
+          "blast"
+        ],
+        "keywords_ta": [
+          "ஒத்த நோய்கள்",
+          "வேறுபாடு",
+          "குலை நோய் வேறுபாடு",
+          "குறுகிய பழுப்பு புள்ளி"
+        ],
+        "keywords_tanglish": [
+          "similar",
+          "similar diseases",
+          "vera noi",
+          "blast maathiri",
+          "vithiyaasam"
+        ],
+        "answer_en": "• Narrow Brown Leaf Spot: forms linear, long narrow reddish-brown streaks parallel to leaf veins, not oval sesame spots.\n• Rice Blast: produces spindle-shaped lesions with diamond pointed ends and grey centres, unlike brown spot.\n• Bacterial Leaf Streak: presents water-soaked translucent yellow streaks between veins, producing bacterial beads.",
+        "answer_ta": "• குறுகிய பழுப்பு புள்ளி நோய்: நரம்புகளுக்கு இணையாக நீண்ட மெல்லிய கோடுகளாகத் தோன்றும்.\n• குலை நோய்: கூர்மையான முனைகளைக் கொண்ட ஈட்டி வடிவப் புள்ளிகளாகவும் சாம்பல் மையத்துடனும் காணப்படும்.\n• பாக்டீரியா இலைக்கீற்று நோய்: நரம்புகளுக்கு இடையில் கசியும் கோடுகளாகத் தோன்றும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Narrow Brown Leaf Spot: Ilai narambukalukku inaiyaaga neelamaana kodaaga irukkum, oval shape illa.\n• Rice Blast: Spindle eetti vadivila koormaiyana munaigala thondrum, naduvil saambal niram irukkum.\n• Bacterial Leaf Streak: Narambukalukku idaiyila neer kasivum keetrugalumaaga thondrum.\n[Needs expert review]"
+      },
+      "which_parts_affected": {
+        "title_en": "Which plant parts are affected by Brown Spot?",
+        "title_ta": "பழுப்பு புள்ளி நோயால் பாதிக்கப்படும் தாவர உறுப்புகள் எவை?",
+        "title_tanglish": "Brown spot payirin endha pagudhigalai thakkum?",
+        "keywords_en": [
+          "which parts",
+          "plant parts",
+          "leaf",
+          "sheath",
+          "grain",
+          "panicle",
+          "glume",
+          "affected parts"
+        ],
+        "keywords_ta": [
+          "பாதிக்கப்படும் பகுதிகள்",
+          "இலை",
+          "கதிர்",
+          "உறை",
+          "தானியம்",
+          "தாவர உறுப்புகள்"
+        ],
+        "keywords_tanglish": [
+          "endha paguthi",
+          "plant parts",
+          "ilai",
+          "kathir",
+          "thandu",
+          "glumes",
+          "paathikkapadum"
+        ],
+        "answer_en": "• Leaf blades: primary site of oval sesame-shaped lesions and yellow chlorosis.\n• Leaf sheaths and coleoptile: seedlings show dark lesions causing blight.\n• Panicles and grain glumes: dark brown discoloration on hulls, resulting in seed abortion and grain spotting.",
+        "answer_ta": "• இலைப்பரப்பு: முதன்மையாக எள் வடிவப் புள்ளிகள் மற்றும் மஞ்சள் வளையம் தோன்றும்.\n• இலை உறை மற்றும் இளம் நாற்று: நாற்று அழுகல் மற்றும் கருகல் ஏற்படும்.\n• கதிர் மற்றும் நெல் மணிகள்: உமியின் மேல் கரும்பழுப்பு நிறப் புள்ளிகள் தோன்றி பதராகும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Ilai: Mukkiyamaana oval ellu vadiva pulligal ilaila varum.\n• Ilai urai mattrum naatru: Naatru karugi azhuga vaikkum.\n• Kathir mattrum nel mani: Nel umimeethu karuppu pulligal vanthu mani padhar aagum.\n[Needs expert review]"
+      }
+    }
+  },
+  "blast": {
+    "name_en": "Rice Blast",
+    "name_ta": "குலை நோய்",
+    "name_tanglish": "Rice Blast (Kulai Noi)",
+    "topics": {
+      "symptoms": {
+        "title_en": "Symptoms of Rice Blast",
+        "title_ta": "குலை நோயின் அறிகுறிகள்",
+        "title_tanglish": "Rice Blast noiyin arikurigalum thotramum",
+        "keywords_en": [
+          "symptom",
+          "symptoms",
+          "sign",
+          "spindle",
+          "diamond",
+          "grey centre",
+          "ash grey",
+          "neck rot",
+          "broken neck"
+        ],
+        "keywords_ta": [
+          "அறிகுறி",
+          "அறிகுறிகள்",
+          "ஈட்டி வடிவம்",
+          "சாம்பல் நிறம்",
+          "கழுத்து அழுகல்",
+          "கதிர் முறிவு"
+        ],
+        "keywords_tanglish": [
+          "symptoms",
+          "symptoms enna",
+          "epdi irukkum",
+          "eppadi irukkum",
+          "spindle shape",
+          "diamond",
+          "kazhuthu arugal"
+        ],
+        "answer_en": "• Diamond or spindle-shaped lesions with pointed ends, greyish-white centres, and reddish-brown margins on leaves.\n• Collar blast occurs at the junction of the leaf blade and sheath, causing the entire leaf blade to die.\n• Neck blast infects the panicle node, turning it dark brown or black and causing the panicle to snap and fall.",
+        "answer_ta": "• இலைகளில் கூர்மையான முனைகளுடன் சாம்பல் நிற மையமும் பழுப்பு நிற விளிம்பும் கொண்ட ஈட்டி வடிவப் புள்ளிகள் தோன்றும்.\n• இலைக் கழுத்துப் பகுதியில் தாக்கி இலை முழுவதையும் காய வைக்கும்.\n• கதிர் கழுத்துப் பகுதியில் தாக்கும் போது கறுத்து முறிந்து தானியங்கள் பதராகும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Ilaila spindle diamond shape-la koormaiyana munaigalum saambal nira nadupaguthiyum thondrum.\n• Ilai kazhutha thakkuna ilai muzhuvathum kaanju pogum.\n• Kathir kazhuthula thakkuna (neck blast) karuppagi odinju vizhundhu mani padhar aagum.\n[Needs expert review]"
+      },
+      "how_it_spreads": {
+        "title_en": "How does Rice Blast spread?",
+        "title_ta": "குலை நோய் எவ்வாறு பரவுகிறது?",
+        "title_tanglish": "Rice Blast eppadi paravum?",
+        "keywords_en": [
+          "spread",
+          "how it spreads",
+          "airborne",
+          "wind",
+          "spores",
+          "conidia",
+          "dew",
+          "cloudy"
+        ],
+        "keywords_ta": [
+          "பரவ",
+          "பரவுதல்",
+          "பரவுகிறது",
+          "எப்படி பரவுகிறது",
+          "காற்று மூலம்",
+          "பூஞ்சை வித்துக்கள்"
+        ],
+        "keywords_tanglish": [
+          "spread",
+          "spread agum",
+          "epadi spread agum",
+          "eppadi paravum",
+          "paravum",
+          "kaathula"
+        ],
+        "answer_en": "• Millions of microscopic airborne spores (conidia) are released at night and carried long distances by wind.\n• Rain splash and standing water in adjacent plots also disperse fungal inoculum across the canopy.\n• Excessive nitrogen fertilizer produces soft, lush tissue that allows rapid spore penetration.",
+        "answer_ta": "• இரவில் வெளியாகும் நுண்ணிய பூஞ்சை வித்துக்கள் காற்றில் வெகுதூரம் அடித்துச் செல்லப்பட்டு பரவுகிறது.\n• மழைத்துளிகள் மற்றும் நீர்ப்பாசனம் மூலம் பக்கத்து பயிர்களுக்கு எளிதில் பரவும்.\n• அதிகப்படியான யூரியா தழைச்சத்து இடுவதால் இலை மென்மையாகி பூஞ்சை எளிதில் ஊடுருவுகிறது.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Iravu nerathula kaathula vara microscopic fungal spores (conidia) romba thooram paravum.\n• Mazhai thuligal mattrum vayal thanni paasanam moolamavum adutha payirukku paravum.\n• Athiga urea nitrogen pottal ilai soft aagi poonjai vegama nuzhaiyum.\n[Needs expert review]"
+      },
+      "prevention": {
+        "title_en": "How to prevent Rice Blast and stop spread?",
+        "title_ta": "குலை நோய் பரவுவதைத் தடுப்பது மற்றும் கட்டுப்படுத்துவது எப்படி?",
+        "title_tanglish": "Rice Blast noi thadukka mattrum spread reduce panna enna seiyanum?",
+        "keywords_en": [
+          "prevent",
+          "prevention",
+          "stop",
+          "reduce",
+          "control",
+          "avoid",
+          "spread reduce",
+          "stop spread",
+          "next season",
+          "resistant variety"
+        ],
+        "keywords_ta": [
+          "தடுக்க",
+          "குறைக்க",
+          "பரவுவதை குறைக்க",
+          "கட்டுப்படுத்த",
+          "அடுத்த பருவம்",
+          "எதிர்ப்பு ரகம்",
+          "முன்னெச்சரிக்கை"
+        ],
+        "keywords_tanglish": [
+          "thadukka",
+          "kuraikka",
+          "reduce panna",
+          "spread reduce",
+          "spread reduce panna",
+          "epadi spread pannuratha reduce panna",
+          "stop panna",
+          "next season"
+        ],
+        "answer_en": "• Adopt blast-resistant or tolerant rice varieties recommended by TNAU for your agro-climatic zone.\n• Treat seeds with biocontrol agents or certified seed dressing protocols before nursery raising.\n• Split nitrogen application into multiple smaller doses guided by the Leaf Colour Chart (LCC); avoid heavy single doses.",
+        "answer_ta": "• உங்கள் பகுதிக்கு ஏற்ற TNAU பரிந்துரைத்த குலை நோய் எதிர்ப்பு ரகங்களைப் பயிரிடவும்.\n• நாற்று நடுவதற்கு முன் சான்றளிக்கப்பட்ட விதை நேர்த்தி முறைகளை தவறாமல் செய்யவும்.\n• யூரியாவை ஒரே முறையில் இடாமல், இலை வண்ண அட்டை (LCC) வழிகாட்டல்படி 3 அல்லது 4 முறை பிரித்து இடவும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Unga paguthikku etha TNAU blast ethirppu ragangalai theynthu eduthu payiridavum.\n• Naatru naduvatharku munbu vidhai nerthi (seed treatment) kandippa seiyavum.\n• Urea-va ore aadiyaaga podama Leaf Colour Chart (LCC) paarthu 3-4 thavanaiyaaga split panni podunga.\n[Needs expert review]"
+      },
+      "treatment_medicine": {
+        "title_en": "Recommended medicine and spray treatment for Blast",
+        "title_ta": "குலை நோய்க்கான பரிந்துரைக்கப்படும் மருந்து மற்றும் சிகிச்சை",
+        "title_tanglish": "Blast-kku enna marunthu thelikkanum?",
+        "keywords_en": [
+          "medicine",
+          "spray",
+          "treatment",
+          "cure",
+          "fungicide",
+          "what to spray",
+          "blast medicine"
+        ],
+        "keywords_ta": [
+          "மருந்து",
+          "தெளிப்பு",
+          "தெளிக்க",
+          "மருந்தளவு",
+          "சிகிச்சை",
+          "பூஞ்சைக்கொல்லி"
+        ],
+        "keywords_tanglish": [
+          "marunthu",
+          "marundhu",
+          "maruthu",
+          "thelikka",
+          "thelikkanum",
+          "adikanum",
+          "spray panna",
+          "blast marunthu"
+        ],
+        "answer_en": "• Use only the products and dosage recommended in the current TNAU Crop Production Guide or by your local agriculture officer.\n• Immediately halt top-dressing with nitrogen fertilizer upon noticing blast spots.\n• Spray during early morning or late afternoon when wind is calm; consult your agriculture officer for safe timing.",
+        "answer_ta": "• தற்போதைய TNAU பயிர் உற்பத்தி வழிகாட்டி அல்லது வேளாண் அலுவலர் பரிந்துரைத்த பூஞ்சைக்கொல்லிகளை மட்டுமே பயன்படுத்தவும்.\n• குலை நோய் அறிகுறிகள் தெரிந்தவுடன் யூரியா மேலுரமிடுவதை உடனடியாக நிறுத்தவும்.\n• காலை அல்லது மாலை வேளையில் காற்று இல்லாத போது தெளிக்கவும்; வழிகாட்டலுக்கு வேளாண் அலுவலரை அணுகவும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• TNAU Crop Production Guide illa local agriculture officer recommend panna marundhai mattum sariyaana nerathil thelikkavum.\n• Blast pulligal therintha udane urea poduvathai udane niruthavum.\n• Kaalai illa maalai nerathula kaathadippatharku munbu thelikkavum; agriculture officer aalosanai peravum.\n[Needs expert review]"
+      },
+      "cause": {
+        "title_en": "What causes Rice Blast?",
+        "title_ta": "குலை நோய் உண்டாகக் காரணம் என்ன?",
+        "title_tanglish": "Rice Blast vara kaaranam enna?",
+        "keywords_en": [
+          "cause",
+          "caused by",
+          "pathogen",
+          "fungus",
+          "pyricularia",
+          "magnaporthe",
+          "why",
+          "reason"
+        ],
+        "keywords_ta": [
+          "காரணம்",
+          "ஏன் வருகிறது",
+          "உண்டாக்குவது எது",
+          "பூஞ்சை காரணி"
+        ],
+        "keywords_tanglish": [
+          "kaaranam",
+          "yen varuthu",
+          "edhanala varuthu",
+          "pathogen",
+          "fungus"
+        ],
+        "answer_en": "• Caused by the fungal organism Magnaporthe oryzae (Pyricularia oryzae).\n• The fungus attacks all aerial vegetative and reproductive parts of the rice plant.\n• Survives on collateral weed hosts and infected straw between growing seasons.",
+        "answer_ta": "• மேக்னபோர்த்தே ஒரைசே (Magnaporthe oryzae / Pyricularia oryzae) என்ற பூஞ்சையால் இந்நோய் உண்டாகிறது.\n• இது நெற்பயிரின் இலை, கணு மற்றும் கதிர் என அனைத்து மேல் பாகங்களையும் தாக்கும்.\n• பயிர்க் கழிவுகள் மற்றும் வரப்புப் புற்களில் இப்பூஞ்சை பருவம் விட்டுப் பருவம் உயிர்வாழ்கிறது.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Magnaporthe oryzae (Pyricularia oryzae) endra poonjai thaan intha noikku mukkiya kaaranam.\n• Ithu nel payirin ilai, kanu mattrum kathir kazhuthu ena ella aerial parts-aiyum thakkum.\n• Vayalin varappu pullgalilum palaiya thaalgalilum intha poonjai thangi irukkum.\n[Needs expert review]"
+      },
+      "favourable_conditions": {
+        "title_en": "Weather and environmental conditions favouring Blast",
+        "title_ta": "குலை நோய் அதிகரிக்க சாதகமான வானிலை மற்றும் சூழல்",
+        "title_tanglish": "Blast athigarikka saadhagamaana weather",
+        "keywords_en": [
+          "weather",
+          "climate",
+          "temperature",
+          "cool nights",
+          "dew",
+          "humidity",
+          "rain",
+          "fog"
+        ],
+        "keywords_ta": [
+          "வானிலை",
+          "சூழல்",
+          "பனி",
+          "ஈரப்பதம்",
+          "குளிர்ந்த இரவு",
+          "மேகமூட்டம்"
+        ],
+        "keywords_tanglish": [
+          "weather",
+          "climate",
+          "pani kaalam",
+          "mazhai kaalam",
+          "eerappatham",
+          "season"
+        ],
+        "answer_en": "• Cool night temperatures (18°C to 22°C) combined with high relative humidity (above 90%).\n• Long duration of free dew moisture on leaves (10 hours or more) and cloudy, overcast skies.\n• Dense plant spacing combined with excessive doses of chemical nitrogen fertilizer.",
+        "answer_ta": "• குளிர்ந்த இரவு நேரம் (18°C - 22°C) மற்றும் அதிக காற்றில் ஈரப்பதம் (90%க்கு மேல்).\n• இலைகளில் 10 மணி நேரத்திற்கும் மேலாகப் பனித்துளி தேங்கி நிற்றல் மற்றும் தொடர் மேகமூட்டம்.\n• பயிர்கள் நெருக்கமாக இருத்தல் மற்றும் அளவுக்கு அதிகமான தழைச்சத்து (யூரியா) இடுதல்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Kulirntha iravu (18°C - 22°C) mattrum athiga eerappatham (90% mela).\n• Ilaila 10 manineram mela pani thanni thangi irunthaalum thodar megamootam irunthaalum.\n• Payir romba nerukkama irunthaalum athiga urea nitrogen pottalum blast seekiram varum.\n[Needs expert review]"
+      },
+      "what_to_do_now": {
+        "title_en": "Immediate field actions for Rice Blast",
+        "title_ta": "தற்போது எடுக்க வேண்டிய உடனடி நடவடிக்கை",
+        "title_tanglish": "Blast-kku ippo udane enna pannanum?",
+        "keywords_en": [
+          "what to do now",
+          "severity",
+          "action",
+          "immediate",
+          "urgent",
+          "damage"
+        ],
+        "keywords_ta": [
+          "இப்போது என்ன செய்ய வேண்டும்",
+          "உடனடி நடவடிக்கை",
+          "சேதம்"
+        ],
+        "keywords_tanglish": [
+          "what to do now",
+          "ippo enna pannanum",
+          "action",
+          "udane enna seiyanum"
+        ],
+        "answer_en": "• Stop nitrogen (urea) applications completely until disease spread is contained.\n• Keep a thin film of water in the field; do not allow the field to dry out completely under drought stress.\n• For moderate or severe leaf damage, consult the local agriculture officer immediately before panicles emerge.",
+        "answer_ta": "• நோய் பரவுவது நிற்கும் வரை யூரியா மேலுரமிடுவதை முழுமையாக நிறுத்தவும்.\n• வயலில் மெல்லிய நீர் மட்டத்தை பராமரிக்கவும்; வயல் முற்றிலும் காய்ந்து போக விடக்கூடாது.\n• பாதிப்பு தீவிரமாக இருந்தால் கதிர் வெளிவரும் முன்பே வேளாண் அலுவலரை அணுகி அறிவுரை பெறவும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Noi paravuvathu nirkum varai urea poduvathai muzhuvathum niruthavum.\n• Vayalil thin film of water maintain pannunga; vayal kaaya vidatheenga.\n• Paathippu moderate/high-ah iruntha kathir varathukku munnadiye agriculture officer-ah sandhikavum.\n[Needs expert review]"
+      },
+      "yield_effect": {
+        "title_en": "Effect of Blast on rice yield",
+        "title_ta": "குலை நோயால் ஏற்படும் மகசூல் இழப்பு",
+        "title_tanglish": "Blast noiyal magasoolil paathippu",
+        "keywords_en": [
+          "yield",
+          "loss",
+          "neck blast",
+          "chaffy",
+          "damage yield",
+          "grain yield"
+        ],
+        "keywords_ta": [
+          "மகசூல்",
+          "தானியம்",
+          "பதர்",
+          "இழப்பு",
+          "கதிர் குலை"
+        ],
+        "keywords_tanglish": [
+          "yield",
+          "loss",
+          "magasool",
+          "padhar",
+          "evlo loss"
+        ],
+        "answer_en": "• Leaf blast reduces tillering and stunts early vegetative growth, lowering productive panicle count.\n• Neck blast snaps the base of the panicle, halting grain filling and resulting in 100% sterile chaffy panicles.\n• Yield loss can be severe if infection occurs at the heading to flowering phase.",
+        "answer_ta": "• இலை குலை நோய் பயிரின் தூர் கட்டுவதைக் குறைத்து வளர்ச்சியைப் பாதிக்கிறது.\n• கதிர் குலை நோய் ஏற்பட்டால் கதிர் உடைந்து முழுமையாகப் பதராகி கடுமையான மகசூல் இழப்பை உண்டாக்கும்.\n• கதிர் வரும் தருணத்தில் இந்நோய் தாக்கினால் அதிக சேதம் ஏற்படும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Leaf blast thoor kattuvathai kuraithu payirin valarchiyai thadukkum.\n• Neck blast vantha kathir kazhuthu odinju 100% padhar aagi periya magasool izhappu undaakkum.\n• Kathir poothu varum kaalathil noi vanthaal romba athiga paathippu thondrum.\n[Needs expert review]"
+      },
+      "see_officer": {
+        "title_en": "When to consult the Agriculture Officer for Blast?",
+        "title_ta": "வேளாண்மை அலுவலரின் உதவியை எப்போது நாட வேண்டும்?",
+        "title_tanglish": "Blast-kku agriculture officer-ah eppo contact pannanum?",
+        "keywords_en": [
+          "officer",
+          "agriculture officer",
+          "aao",
+          "kvk",
+          "contact officer",
+          "expert help"
+        ],
+        "keywords_ta": [
+          "வேளாண் அலுவலர்",
+          "அலுவலர்",
+          "தொடர்பு",
+          "ஆலோசனை"
+        ],
+        "keywords_tanglish": [
+          "officer",
+          "agriculture officer",
+          "velanmai aluvalar",
+          "aao",
+          "kvk"
+        ],
+        "answer_en": "• Consult your Agriculture Officer immediately if spindle lesions appear on upper flag leaves before panicle emergence.\n• Report neck blast symptoms promptly so that extension personnel can issue alerts for surrounding blocks.\n• Rely on verified TNAU recommendations rather than unverified commercial advice.",
+        "answer_ta": "• கதிர் வெளிவரும் முன் கொடி இலையில் ஈட்டி வடிவப் புள்ளிகள் தோன்றினால் உடனே வேளாண் அலுவலரை அணுகவும்.\n• கதிர் கழுத்து அழுகல் தென்பட்டால் அருகில் உள்ள விவசாயிகளுக்கும் எச்சரிக்கை விட அலுவலருக்குத் தெரிவிக்கவும்.\n• அதிகாரப்பூர்வமான TNAU ஆலோசனைகளை மட்டுமே பின்பற்றவும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Kathir varuvatharku munnadi kodi ilaila spindle pulligal vantha udane agriculture officer-ah sandhikavum.\n• Neck blast arikurigala udane officer-kitta sollunga adutha vayalukku alert kodukka.\n• Unverified veli marundhugalai vangama TNAU official advice mattum kelunga.\n[Needs expert review]"
+      },
+      "similar_diseases": {
+        "title_en": "Diseases similar to Rice Blast",
+        "title_ta": "குலை நோய் போன்ற பிற நோய்கள்",
+        "title_tanglish": "Blast maathiri theriyum matra noigal",
+        "keywords_en": [
+          "similar",
+          "similar disease",
+          "confuse",
+          "looks like",
+          "difference",
+          "brown spot vs blast"
+        ],
+        "keywords_ta": [
+          "ஒத்த நோய்கள்",
+          "வேறுபாடு",
+          "பழுப்பு புள்ளி வேறுபாடு"
+        ],
+        "keywords_tanglish": [
+          "similar",
+          "similar diseases",
+          "brown spot maathiri",
+          "vithiyaasam"
+        ],
+        "answer_en": "• Brown Spot: lesions are oval or circular like sesame seeds, lacking the pointed diamond spindle shape of blast.\n• Sheath Rot: attacks the flag leaf sheath surrounding young panicles with oblong greyish-brown rot.\n• Bacterial Leaf Blight: shows yellow wavy margins along leaf edges, not isolated spindle spots.",
+        "answer_ta": "• பழுப்பு புள்ளி நோய்: எள் போன்ற உருண்டை அல்லது நீள்வட்டப் புள்ளிகளாக இருக்கும்; கூர்மையான முனைகள் இருக்காது.\n• உறை அழுகல் நோய்: கொடி இலை உறையைத் தாக்கி அழுகலை உண்டாக்கும்.\n• பாக்டீரியா இலைக்கருகல்: இலை விளிம்புகளில் அலை போன்ற மஞ்சள் கருகலை ஏற்படுத்தும்; தனித்தனிப் புள்ளிகளாக இருக்காது.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Brown Spot: Ellu vadiva oval pulligalaga irukkum; blast maathiri pointed diamond ends irukkadhu.\n• Sheath Rot: Kodi ilai uraiyai thakkum oblong saambal azhugal.\n• Bacterial Leaf Blight: Ilai orathula alaialaiya yellow karugal varum; isolated spots irukkadhu.\n[Needs expert review]"
+      },
+      "which_parts_affected": {
+        "title_en": "Parts of the paddy plant affected by Blast",
+        "title_ta": "குலை நோயால் தாக்கப்படும் பயிரின் உறுப்புகள்",
+        "title_tanglish": "Blast noi payirin endha pagudhigalai thakkum?",
+        "keywords_en": [
+          "which parts",
+          "plant parts",
+          "leaf",
+          "collar",
+          "node",
+          "neck",
+          "panicle",
+          "stem"
+        ],
+        "keywords_ta": [
+          "பாதிக்கப்படும் உறுப்புகள்",
+          "இலை",
+          "கணு",
+          "கழுத்து",
+          "கதிர்",
+          "தண்டு"
+        ],
+        "keywords_tanglish": [
+          "endha paguthi",
+          "plant parts",
+          "ilai",
+          "kanu",
+          "kathir kazhuthu",
+          "neck"
+        ],
+        "answer_en": "• Leaf blade: produces diamond spindle-shaped lesions (leaf blast).\n• Leaf collar: junction of blade and sheath turns brown, killing the leaf (collar blast).\n• Stem node: infected nodes turn black and rot, snapping easily (node blast).\n• Panicle neck: turns dark brown and shrivels, causing lodging and grain sterility (neck blast).",
+        "answer_ta": "• இலைப்பரப்பு: ஈட்டி வடிவப் புள்ளிகளை உண்டாக்கும் (இலை குலை).\n• இலைக் கழுத்து: இலை மற்றும் உறையின் இணைப்பு அழுகி இலை காய்ந்துவிடும்.\n• தண்டு கணுக்கள்: கணுக்கள் கறுத்து அழுகி எளிதில் முறியும் (கணு குலை).\n• கதிர் கழுத்துப் பகுதி: கதிர் காம்பு கறுத்து பதராகி முறிந்துவிடும் (கதிர் குலை).\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Ilai: Spindle shape diamond pulligal varum (leaf blast).\n• Ilai collar: Ilaiyum uraiyum inaiyum idathula azhugi ilai kaanjidum (collar blast).\n• Thandu kanu: Kanukkal karuppagi azhugi odinju vizhum (node blast).\n• Kathir kazhuthu: Kathir kaambu karuppagi 100% padhar aagum (neck blast).\n[Needs expert review]"
+      }
+    }
+  },
+  "blb": {
+    "name_en": "Bacterial Leaf Blight",
+    "name_ta": "பாக்டீரியா இலைக்கருகல் நோய்",
+    "name_tanglish": "Bacterial Leaf Blight (BLB / Karugal Noi)",
+    "topics": {
+      "symptoms": {
+        "title_en": "Symptoms of Bacterial Leaf Blight",
+        "title_ta": "பாக்டீரியா இலைக்கருகல் நோயின் அறிகுறிகள்",
+        "title_tanglish": "BLB noiyin arikurigalum thotramum",
+        "keywords_en": [
+          "symptom",
+          "symptoms",
+          "sign",
+          "wavy margin",
+          "water-soaked",
+          "yellow to white",
+          "kresek",
+          "bacterial ooze"
+        ],
+        "keywords_ta": [
+          "அறிகுறி",
+          "அறிகுறிகள்",
+          "அலை போன்ற விளிம்பு",
+          "மஞ்சள் நிறம்",
+          "வெள்ளை நிறம்",
+          "கிரேசக்",
+          "கசிவு"
+        ],
+        "keywords_tanglish": [
+          "symptoms",
+          "symptoms enna",
+          "epdi irukkum",
+          "eppadi irukkum",
+          "wavy margin",
+          "karugal",
+          "kresek"
+        ],
+        "answer_en": "• Water-soaked to yellowish-orange lesions start at leaf margins near the tip and progress downwards.\n• Lesion margins develop a characteristic wavy, undulating border turning straw-yellow then bleached white.\n• In early tillering stages, systemic infection causes severe seedling wilting and death (known as 'kresek').",
+        "answer_ta": "• இலை நுனியிலிருந்து ஓரங்களில் நீர் ஊறிய மஞ்சள் நிறக் கருகல் ஆரம்பித்து கீழ்நோக்கி பரவும்.\n• கருகலின் விளிம்பு அலை அலையான அமைப்பைக் கொண்டு வைக்கோல் நிறமாக மாறி பின்னர் வெளிறிவிடும்.\n• ஆரம்ப நாற்றுப் பருவத்தில் தாக்கும் போது பயிர் திடீரென வாடி கருகும் ('கிரேசக்' நிலை).\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Ilai nuniyilirunthu orathula neer ooriya yellow karugal aarambithu keezh நோக்கி paravum.\n• Karugalin vidhimbu alai alaiyana (wavy) border-oda straw-yellow niramavum piragu bleached white-avum maarum.\n• Aaramba naatru paruvathil thakkuna payir thideerena vaadi karugum (kresek stage).\n[Needs expert review]"
+      },
+      "how_it_spreads": {
+        "title_en": "How does Bacterial Leaf Blight spread?",
+        "title_ta": "பாக்டீரியா இலைக்கருகல் எவ்வாறு பரவுகிறது?",
+        "title_tanglish": "BLB noi eppadi paravum?",
+        "keywords_en": [
+          "spread",
+          "how it spreads",
+          "water",
+          "irrigation",
+          "rain",
+          "cyclone",
+          "clipping seedlings",
+          "wounds"
+        ],
+        "keywords_ta": [
+          "பரவ",
+          "பரவுதல்",
+          "பரவுகிறது",
+          "நீர்ப்பாசனம்",
+          "மழை",
+          "புயல்",
+          "நாற்று நுனி நறுக்குதல்"
+        ],
+        "keywords_tanglish": [
+          "spread",
+          "spread agum",
+          "epadi spread agum",
+          "eppadi paravum",
+          "paravum",
+          "thanni moolama"
+        ],
+        "answer_en": "• Enters through natural openings (hydathodes) or plant wounds created by heavy winds, storms, or handling.\n• Flooding irrigation water and rain splash transport bacterial cells rapidly from infected to adjacent fields.\n• The traditional practice of clipping seedling tips before transplanting can introduce bacteria directly into tissues.",
+        "answer_ta": "• புயல், பலத்த காற்று அல்லது களையெடுக்கும் போது ஏற்படும் காயங்கள் வழியாக பாக்டீரியா இலைக்குள் நுழைகிறது.\n• வயலில் தேங்கும் பாசன நீர் மற்றும் மழைத்துளிகள் மூலம் பக்கத்து நிலங்களுக்கு அதிவேகமாகப் பரவும்.\n• நடுவதற்கு முன் நாற்று நுனியை நறுக்குவது இந்நோய் நேரடியாகப் பரவ வழிவகுக்கும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Kaatru, mazhai illa kalai edukkum pothu ilaila padum kaayangalin vazhiya bacteria ulla pogum.\n• Vayal paasana thanni mattrum mazhai thuligal moolama adutha vayalukku romba vegama paravum.\n• Nadavukku munnadi naatru nuniyai killuvathu (clipping) intha noiya neradiya paravum.\n[Needs expert review]"
+      },
+      "prevention": {
+        "title_en": "How to prevent Bacterial Leaf Blight and stop spread?",
+        "title_ta": "பாக்டீரியா இலைக்கருகல் பரவுவதை தடுப்பது மற்றும் குறைப்பது எப்படி?",
+        "title_tanglish": "BLB noi thadukka mattrum spread reduce panna enna seiyanum?",
+        "keywords_en": [
+          "prevent",
+          "prevention",
+          "stop",
+          "reduce",
+          "control",
+          "avoid",
+          "spread reduce",
+          "stop spread",
+          "next season",
+          "drain water"
+        ],
+        "keywords_ta": [
+          "தடுக்க",
+          "குறைக்க",
+          "பரவுவதை குறைக்க",
+          "கட்டுப்படுத்த",
+          "அடுத்த பருவம்",
+          "நீர் வடிகால்",
+          "முன்னெச்சரிக்கை"
+        ],
+        "keywords_tanglish": [
+          "thadukka",
+          "kuraikka",
+          "reduce panna",
+          "spread reduce",
+          "spread reduce panna",
+          "epadi spread pannuratha reduce panna",
+          "stop panna",
+          "next season"
+        ],
+        "answer_en": "• Drain standing water from the infected field immediately to prevent bacterial movement through surface water.\n• Do not clip rice seedling tips during transplanting.\n• Avoid excess urea top-dressing and apply recommended potassium to enhance plant resistance.",
+        "answer_ta": "• பாக்டீரியா பரவாமல் இருக்க வயலில் தேங்கியுள்ள பாசன நீரை உடனடியாக வடித்துவிடவும்.\n• நாற்று நடும் போது நாற்றின் நுனிகளை நறுக்குவதைத் தவிர்க்கவும்.\n• அளவுக்கு அதிகமான யூரியாவைத் தவிர்த்து, பயிர் எதிர்ப்பு சக்தியை அதிகரிக்கப் பரிந்துரைக்கப்பட்ட சாம்பல் சத்தை இடவும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Bacteria paravama irukka vayalla thengi nirkum thanniya udane vadithuvidavum.\n• Nadavu seiyum pothu naatru nuniyai narakkave koodadhu.\n• Athiga urea poduratha stop panni potash urathai sariyaaga ittu payirin ethirppai kootunga.\n[Needs expert review]"
+      },
+      "treatment_medicine": {
+        "title_en": "Recommended medicine and spray treatment for BLB",
+        "title_ta": "பாக்டீரியா இலைக்கருகலுக்கான பரிந்துரைக்கப்படும் மருந்து",
+        "title_tanglish": "BLB-kku enna marunthu thelikkanum?",
+        "keywords_en": [
+          "medicine",
+          "spray",
+          "treatment",
+          "cure",
+          "bactericide",
+          "copper",
+          "what to spray"
+        ],
+        "keywords_ta": [
+          "மருந்து",
+          "தெளிப்பு",
+          "தெளிக்க",
+          "மருந்தளவு",
+          "சிகிச்சை",
+          "பாக்டீரியாக்கொல்லி"
+        ],
+        "keywords_tanglish": [
+          "marunthu",
+          "marundhu",
+          "maruthu",
+          "thelikka",
+          "thelikkanum",
+          "adikanum",
+          "spray panna",
+          "blb marunthu"
+        ],
+        "answer_en": "• Use only bactericides or biocontrol formulations approved in the current TNAU Crop Production Guide or advised by your agriculture officer.\n• Drain standing water before applying any treatment.\n• If unsure of the authorized formulation for your variety and stage, consult your agriculture officer.",
+        "answer_ta": "• தற்போதைய TNAU வழிகாட்டி அல்லது வட்டார வேளாண் அலுவலர் பரிந்துரைத்த பாக்டீரியாக்கொல்லி அல்லது இயற்கை நுண்ணுயிர் மருந்துகளை மட்டுமே பயன்படுத்தவும்.\n• மருந்துகளை இடுவதற்கு முன் வயலில் உள்ள நீரை வடிக்கவும்.\n• உங்கள் பகுதிக்கு உகந்த பரிந்துரைக்கு வேளாண்மை அலுவலரைத் தொடர்பு கொள்ளவும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• TNAU Crop Production Guide illa local agriculture officer recommend panna bactericide marundhai mattume sariyaga use pannunga.\n• Marunthu thelikkum munnadi vayal thanniya nalla vadikkavum.\n• Sandhegam iruntha unga velanmai aluvalaridam (agriculture officer) kettu mudivedunga.\n[Needs expert review]"
+      },
+      "cause": {
+        "title_en": "What causes Bacterial Leaf Blight?",
+        "title_ta": "பாக்டீரியா இலைக்கருகல் உண்டாகக் காரணம் என்ன?",
+        "title_tanglish": "BLB vara kaaranam enna?",
+        "keywords_en": [
+          "cause",
+          "caused by",
+          "pathogen",
+          "bacteria",
+          "xanthomonas",
+          "why",
+          "reason"
+        ],
+        "keywords_ta": [
+          "காரணம்",
+          "ஏன் வருகிறது",
+          "உண்டாக்குவது எது",
+          "பாக்டீரியா காரணி"
+        ],
+        "keywords_tanglish": [
+          "kaaranam",
+          "yen varuthu",
+          "edhanala varuthu",
+          "pathogen",
+          "bacteria"
+        ],
+        "answer_en": "• Caused by the bacterium Xanthomonas oryzae pv. oryzae.\n• The pathogen multiplies inside the xylem vascular system, blocking water and nutrient transport to the leaf.\n• Survives in weeds, volunteer rice plants, and infected irrigation channels.",
+        "answer_ta": "• சாந்தோமோனாஸ் ஒரைசே (Xanthomonas oryzae pv. oryzae) என்ற பாக்டீரியாவால் இந்நோய் உண்டாகிறது.\n• இது இலையின் நரம்புப் பாதைகளில் பெருகி நீர் மற்றும் உணவுச் சத்து செல்வதைத் தடுக்கிறது.\n• வயல் வரப்புப் புற்கள் மற்றும் பாசனக் கால்வாய் கழிவுகளில் இப்பாக்டீரியா உயிர்வாழ்கிறது.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Xanthomonas oryzae pv. oryzae endra bacteria thaan intha karugal noikku mukkiya kaaranam.\n• Intha bacteria ilayin xylem narambukalil perugi thanni sothu kadathuvathai thadukkum.\n• Vayal varappu kalaigal mattrum vayal kalvaai thaligalil thangi irukkum.\n[Needs expert review]"
+      },
+      "favourable_conditions": {
+        "title_en": "Favourable weather for Bacterial Leaf Blight",
+        "title_ta": "பாக்டீரியா இலைக்கருகல் தீவிரமடைய சாதகமான சூழல்",
+        "title_tanglish": "BLB athigarikka saadhagamaana weather",
+        "keywords_en": [
+          "weather",
+          "climate",
+          "temperature",
+          "cyclone",
+          "rainstorm",
+          "wind",
+          "flooding",
+          "humidity"
+        ],
+        "keywords_ta": [
+          "வானிலை",
+          "சூழல்",
+          "புயல்",
+          "மழைக்காலம்",
+          "ஈரப்பதம்",
+          "வெள்ளம்"
+        ],
+        "keywords_tanglish": [
+          "weather",
+          "climate",
+          "mazhai",
+          "cyclone",
+          "kaatru",
+          "eerappatham",
+          "season"
+        ],
+        "answer_en": "• Warm temperatures (25°C to 34°C) with high relative humidity (above 70%).\n• Heavy rainstorms, cyclones, and strong winds that bruise leaf tissues, aiding bacterial entry.\n• Deep standing water and continuous submergence of fields in low-lying areas.",
+        "answer_ta": "• 25°C முதல் 34°C வரையிலான மிதமான வெப்பம் மற்றும் அதிக ஈரப்பதம்.\n• பலத்த காற்றுடன் கூடிய கனமழை மற்றும் புயல் இலைகளில் காயங்களை ஏற்படுத்தி பாக்டீரியா நுழைய உதவுகிறது.\n• வயலில் அதிக நீர் தேங்கி நிற்றல் மற்றும் வெள்ளச் சூழல்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• 25°C - 34°C veyil/veppam mattrum athiga eerappatham (70% mela).\n• Kaatrodu koodiya perumazhai mattrum cyclone ilaila kaayangalai undakki bacteria nuzhaiya vaikkum.\n• Vayalla athigamaana thanni thengi submergence aanaalum noi seekiram thondrum.\n[Needs expert review]"
+      },
+      "what_to_do_now": {
+        "title_en": "Immediate action for Bacterial Leaf Blight",
+        "title_ta": "BLB நோய்க்கு தற்போது எடுக்க வேண்டிய உடனடி நடவடிக்கை",
+        "title_tanglish": "BLB-kku ippo udane enna pannanum?",
+        "keywords_en": [
+          "what to do now",
+          "severity",
+          "action",
+          "immediate",
+          "drain",
+          "nitrogen stop"
+        ],
+        "keywords_ta": [
+          "இப்போது என்ன செய்ய வேண்டும்",
+          "உடனடி நடவடிக்கை",
+          "வடிகால்",
+          "யூரியா நிறுத்தம்"
+        ],
+        "keywords_tanglish": [
+          "what to do now",
+          "ippo enna pannanum",
+          "action",
+          "udane enna seiyanum"
+        ],
+        "answer_en": "• Drain standing irrigation water immediately from the affected plots.\n• Stop nitrogen top-dressing completely until fresh healthy leaves emerge.\n• Avoid working or moving across wet fields to prevent mechanically spreading bacteria across leaves.",
+        "answer_ta": "• பாதிக்கப்பட்ட நிலத்திலிருந்து தேங்கிய பாசன நீரை உடனடியாக வடித்துவிடவும்.\n• புதிய ஆரோக்கியமான இலைகள் தோன்றும் வரை யூரியா இடுவதை முழுமையாக நிறுத்தவும்.\n• இலைகளில் ஈரம் இருக்கும் போது வயலில் இறங்குவதையோ வேலை செய்வதையோ தவிர்க்கவும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Paathikkapatta vayalilirunthu thengi nirkum thanniya udane vadithuvidavum.\n• Pudhu pacha ilai varum varai urea nitrogen poduvathai stop pannunga.\n• Ilaila eerappatham irukkum pothu vayalla irangi velai seivathai thavirkkavum.\n[Needs expert review]"
+      },
+      "yield_effect": {
+        "title_en": "Effect of Bacterial Leaf Blight on crop yield",
+        "title_ta": "பாக்டீரியா இலைக்கருகலால் ஏற்படும் மகசூல் இழப்பு",
+        "title_tanglish": "BLB noiyal magasoolil paathippu",
+        "keywords_en": [
+          "yield",
+          "loss",
+          "kresek",
+          "blight damage",
+          "chaffy grains"
+        ],
+        "keywords_ta": [
+          "மகசூல்",
+          "விளைச்சல் இழப்பு",
+          "பதர்",
+          "கிரேசக்"
+        ],
+        "keywords_tanglish": [
+          "yield",
+          "loss",
+          "magasool",
+          "padhar",
+          "evlo loss"
+        ],
+        "answer_en": "• Early systemic kresek wilt can lead to complete seedling mortality and plant stand reduction.\n• In mature crops, leaf blighting reduces functional canopy area, leading to poorly filled, lightweight grains.\n• Severe blighting can cause notable yield losses depending on the growth stage at infection.",
+        "answer_ta": "• ஆரம்ப பருவத்தில் 'கிரேசக்' வாடல் ஏற்பட்டால் நாற்றுகள் முழுவதும் காய்ந்து பயிர் அழியும்.\n• கதிர் வரும் பருவத்தில் இலைகள் கருகினால் ஒளிச்சேர்க்கை குறைந்து மணிகள் சுருங்கி பதராகும்.\n• தீவிர கருகல் குறிப்பிடத்தக்க மகசூல் இழப்பை உண்டாக்கும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Aaramba paruvathil kresek vaadal vantha naatru muzhuvathum kaanju payir azhinjudum.\n• Valarntha payiril ilai karuginaal oli serkkai koranju nel mani chinnathaagi padhar aagum.\n• Thodarnthu karugal neelithaal magasool nalla kuraithu vidum.\n[Needs expert review]"
+      },
+      "see_officer": {
+        "title_en": "When to consult the Agriculture Officer for BLB?",
+        "title_ta": "BLB நோய்க்காக வேளாண்மை அலுவலரை எப்போது தொடர்பு கொள்ள வேண்டும்?",
+        "title_tanglish": "BLB-kku agriculture officer-ah eppo contact pannanum?",
+        "keywords_en": [
+          "officer",
+          "agriculture officer",
+          "aao",
+          "kvk",
+          "contact officer"
+        ],
+        "keywords_ta": [
+          "வேளாண் அலுவலர்",
+          "அலுவலர்",
+          "தொடர்பு",
+          "ஆலோசனை"
+        ],
+        "keywords_tanglish": [
+          "officer",
+          "agriculture officer",
+          "velanmai aluvalar",
+          "aao",
+          "kvk"
+        ],
+        "answer_en": "• Seek immediate assistance from the local agriculture officer if rapid leaf tip blighting occurs after storms or rain.\n• Ask the officer to verify whether the blighting is bacterial (BLB) or fungal (Blast/Scald) via an ooze test.\n• Strictly follow official extension advisories before procuring any field sprays.",
+        "answer_ta": "• மழை அல்லது புயலுக்குப் பிறகு இலை நுனிகள் வேகமாக கருகினால் உடனே வேளாண் அலுவலரை அணுகவும்.\n• இது பாக்டீரியா கருகலா அல்லது பூஞ்சை கருகலா என்பதை உறுதி செய்ய அலுவலரிடம் 'கசிவு ஆய்வு' (ooze test) பெறவும்.\n• அலுவலரின் பரிந்துரையின்றி கடைகளில் கிடைக்கும் மருந்துகளை கண்மூடித்தனமாக வாங்க வேண்டாம்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Mazhaikku piragu ilai nuni vegama karuginaal udane agriculture officer-ah contact pannunga.\n• Ithu bacteria karugala illa fungus karugala nu confirm panna officer kitta ooze test seiyavum.\n• Officer sollaatha endha chemical-aiyum kadayila poi direct-ah vaangatheenga.\n[Needs expert review]"
+      },
+      "similar_diseases": {
+        "title_en": "Diseases similar to Bacterial Leaf Blight",
+        "title_ta": "பாக்டீரியா இலைக்கருகல் போன்ற பிற நோய்கள்",
+        "title_tanglish": "BLB maathiri theriyum matra noigal",
+        "keywords_en": [
+          "similar",
+          "similar disease",
+          "confuse",
+          "looks like",
+          "difference",
+          "leaf scald",
+          "blast"
+        ],
+        "keywords_ta": [
+          "ஒத்த நோய்கள்",
+          "வேறுபாடு",
+          "இலைக்கருகல் வேறுபாடு"
+        ],
+        "keywords_tanglish": [
+          "similar",
+          "similar diseases",
+          "leaf scald maathiri",
+          "vithiyaasam"
+        ],
+        "answer_en": "• Leaf Scald: produces characteristic concentric olive-green to brown chevron or banded patterns from the tip, not wavy borders.\n• Bacterial Leaf Streak: confined to narrow interveinal streaks without broad undulating marginal blighting.\n• Salinity/Drought stress: causes dry straw-colored leaf tips without bacterial ooze or yellow wavy advancing margins.",
+        "answer_ta": "• இலை வெளிரல் (Leaf Scald): இலை நுனியிலிருந்து வளைய வளையமான பட்டைகளாகக் கருகும்.\n• பாக்டீரியா இலைக்கீற்று: நரம்புகளுக்கு இடையே மெல்லிய நேர்க்கோடுகளாக இருக்கும்.\n• உவர்/வறட்சி பாதிப்பு: நுனி காய்ந்திருக்கும் ஆனால் அலை அலையான மஞ்சள் விளிம்போ பாக்டீரியா கசிவோ இருக்காது.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Leaf Scald: Ilai nuniyilirunthu chevron valaiyagalaga karugum; wavy margin irukkadhu.\n• Bacterial Leaf Streak: Narambukalukku idaiyila straight line streaks mattum varum.\n• Uppu/Varatchi paathippu: Nuni kaanjirukkum aana bacterial ooze illa wavy yellow margin irukkadhu.\n[Needs expert review]"
+      },
+      "which_parts_affected": {
+        "title_en": "Plant parts affected by Bacterial Leaf Blight",
+        "title_ta": "BLB நோயால் தாக்கப்படும் தாவர உறுப்புகள்",
+        "title_tanglish": "BLB payirin endha pagudhigalai thakkum?",
+        "keywords_en": [
+          "which parts",
+          "plant parts",
+          "leaf",
+          "blade",
+          "vascular",
+          "seedling"
+        ],
+        "keywords_ta": [
+          "பாதிக்கப்படும் உறுப்புகள்",
+          "இலை",
+          "இலை விளிம்பு",
+          "நாற்று"
+        ],
+        "keywords_tanglish": [
+          "endha paguthi",
+          "plant parts",
+          "ilai",
+          "blade",
+          "naatru"
+        ],
+        "answer_en": "• Leaf blades: marginal wavy chlorosis drying downward into bleached straw-colored blight.\n• Vascular system: bacteria block the xylem water-conducting vessels internally.\n• Seedlings / tillers: vascular wilt causing rapid death of whole tillers (kresek).",
+        "answer_ta": "• இலைப்பரப்பு: விளிம்புகளில் அலை போன்ற கருகல் ஏற்பட்டு இலை முழுவதும் வைக்கோல் போல் காயும்.\n• நரம்புப் பாதை: இலையின் சைலம் நாளங்களை பாக்டீரியா அடைத்து நீரோட்டத்தைத் தடுக்கும்.\n• நாற்றுக்கள் / தூர்கள்: முழு தூரும் திடீரென வாடி அழுகும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Ilai: Orangalil wavy yellow karugal aarambithu ilai muzhuka straw niramaga kaanjidum.\n• Vascular narambugal: Bacteria xylem thanni kadathum paadhaigala adaithuvidum.\n• Naatru mattrum thoorgal: Kresek thakkuthalaal muzhu thoorgalum thideerena vaadi saagum.\n[Needs expert review]"
+      }
+    }
+  },
+  "healthy": {
+    "name_en": "Healthy Crop",
+    "name_ta": "ஆரோக்கியமான பயிர்",
+    "name_tanglish": "Aarokkiyamaana Payir (Healthy Paddy)",
+    "topics": {
+      "symptoms": {
+        "title_en": "Signs of a Healthy Paddy Crop",
+        "title_ta": "ஆரோக்கியமான நெற்பயிரின் அறிகுறிகள்",
+        "title_tanglish": "Aarokkiyamaana payirin arikurigalum thotramum",
+        "keywords_en": [
+          "symptom",
+          "symptoms",
+          "sign",
+          "healthy signs",
+          "clean leaf",
+          "erect",
+          "uniform green"
+        ],
+        "keywords_ta": [
+          "அறிகுறி",
+          "ஆரோக்கியம்",
+          "பச்சை இலை",
+          "தூய்மை",
+          "நேரான இலை"
+        ],
+        "keywords_tanglish": [
+          "symptoms",
+          "symptoms enna",
+          "epdi irukkum",
+          "aarokkiyam",
+          "pacha ilai",
+          "thotram"
+        ],
+        "answer_en": "• Leaf blades are uniform green, firm, erect, and free of spots, lesions, or curling.\n• Tiller bases and sheaths are clean and free of rot, discolouration, or fungal mycelium.\n• Root system is vigorous with clean white and cream feeder roots.",
+        "answer_ta": "• இலைகள் ஒரே சீரான பச்சை நிறத்துடனும், நிமிர்ந்து புள்ளிகளோ கருகலோ இன்றி காணப்படும்.\n• தூரின் அடிப்பகுதி மற்றும் இலை உறைகள் அழுகலோ நிற மாற்றமோ இன்றி சுத்தமாக இருக்கும்.\n• வேர்கள் வெண்மை மற்றும் இளமஞ்சள் நிறத்துடன் வீரியமாக இருக்கும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Ilaigal ore seerana dark green niramavum, nalla nimirnthu pulligal karugal illama irukkum.\n• Thoor adi paguthi mattrum urai azhugal illaamal clean-ah irukkum.\n• Vergal nalla vellaiya cream niramavum nalla valarchiyoda irukkum.\n[Needs expert review]"
+      },
+      "how_it_spreads": {
+        "title_en": "How to maintain health across the paddy field?",
+        "title_ta": "பயிர் ஆரோக்கியத்தை வயல் முழுவதும் பராமரிப்பது எப்படி?",
+        "title_tanglish": "Vayal muzhuvathum payir aarokkiyamaga irukka enna seiyanum?",
+        "keywords_en": [
+          "spread",
+          "maintain",
+          "healthy field",
+          "clean",
+          "water management"
+        ],
+        "keywords_ta": [
+          "பராமரிப்பு",
+          "பரவாமல் காக்க",
+          "ஆரோக்கியம்",
+          "பாதுகாப்பு"
+        ],
+        "keywords_tanglish": [
+          "spread",
+          "epadi maintain pannanum",
+          "aarokkiyam",
+          "paadhukaappu"
+        ],
+        "answer_en": "• Maintain intermittent wetting and drying (AWD) water management to aerate root zones.\n• Keep field bunds clean and free of alternate weed hosts that harbor pests and pathogens.\n• Inspect leaf color periodically with the Leaf Colour Chart (LCC) to prevent nutrient imbalances.",
+        "answer_ta": "• வேர் மண்டலத்திற்கு காற்று கிடைக்க காய்ச்சலும் பாய்ச்சலுமாக நீர்ப்பாசனம் செய்யவும்.\n• வயல் வரப்புகளில் களைகள் இல்லாமல் சுத்தமாக வைத்து பூச்சி நோய்கள் பரவுவதைத் தடுக்கவும்.\n• இலை வண்ண அட்டை (LCC) மூலம் சீரான இடைவெளியில் ஆய்வு செய்து சத்து சமநிலையைப் பராமரிக்கவும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Vergalukku kaathottam kidaikka kaichalum paichalumaaga thanni paasanam maintain pannunga.\n• Vayal varappula kalaigal illama clean-ah vechikonga noi pathogens thangaama irukka.\n• LCC card vachu ilai nira therivai paarthu uram sama alavila maintain seiyavum.\n[Needs expert review]"
+      },
+      "prevention": {
+        "title_en": "Preventative care for healthy paddy crop",
+        "title_ta": "ஆரோக்கியமான பயிருக்கான தடுப்பு மற்றும் பாதுகாப்பு வழிமுறைகள்",
+        "title_tanglish": "Aarokkiyamaana payirukku preventive steps enna?",
+        "keywords_en": [
+          "prevent",
+          "prevention",
+          "stop",
+          "care",
+          "healthy practice",
+          "routine"
+        ],
+        "keywords_ta": [
+          "தடுப்பு முறை",
+          "பாதுகாப்பு",
+          "முன்னெச்சரிக்கை",
+          "பராமரிப்பு"
+        ],
+        "keywords_tanglish": [
+          "prevention",
+          "thadukka",
+          "care edukkum murai",
+          "preventive steps"
+        ],
+        "answer_en": "• Practice balanced fertilization using recommended NPK ratios based on soil test results.\n• Avoid excess urea, which makes leaves soft and succulent and invites disease.\n• Periodically inspect the crop, especially during cloudy weather, to catch any initial infection early.",
+        "answer_ta": "• மண் பரிசோதனை முடிவுகளின்படி சரியான விகிதத்தில் தழை, மணி மற்றும் சாம்பல் சத்துக்களை இடவும்.\n• அதிகப்படியான யூரியா இடுவதைத் தவிர்க்கவும்; இது இலைகளை மென்மையாக்கி நோய்களை ஈர்க்கும்.\n• மேகமூட்டமான நாட்களில் பயிரை உன்னிப்பாகக் கண்காணித்து ஆரம்ப நிலையிலேயே முன்னெச்சரிக்கை எடுக்கவும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Mann parinsoothanai padi NPK urangalai sariyaana vighithathil podavum.\n• Athiga urea nitrogen poduvathai thavirkkavum; athu ilaiyai soft aakki noigalai kooppidum.\n• Megamootam ulla naatkalil payirai nalla check panni aarambathiliye arikurigala thadukka koodum.\n[Needs expert review]"
+      },
+      "treatment_medicine": {
+        "title_en": "Medicine or chemical sprays for healthy crop?",
+        "title_ta": "ஆரோக்கியமான பயிருக்கு மருந்துகள் ஏதேனும் தேவையா?",
+        "title_tanglish": "Aarokkiyamaana payirukku ethavathu marunthu thelikkanuma?",
+        "keywords_en": [
+          "medicine",
+          "spray",
+          "chemical",
+          "treatment",
+          "fertilizer",
+          "healthy crop"
+        ],
+        "keywords_ta": [
+          "மருந்து",
+          "தெளிப்பு",
+          "தேவையா",
+          "பூச்சிக்கொல்லி"
+        ],
+        "keywords_tanglish": [
+          "marunthu",
+          "marundhu",
+          "thelikkanuma",
+          "spray thevaiya",
+          "chemical thevaiya"
+        ],
+        "answer_en": "• No chemical pesticide or fungicide spray is required for a healthy crop.\n• Prophylactic or unnecessary chemical spraying harms beneficial predators and increases input costs.\n• If desiring growth promotion, use certified biofertilizers or organic inputs as recommended by your agriculture officer.",
+        "answer_ta": "• ஆரோக்கியமான பயிருக்கு எந்தவித பூஞ்சைக்கொல்லியோ ரசாயன மருந்தையோ தெளிக்க வேண்டிய அவசியமில்லை.\n• தேவையின்றி தெளிப்பது நன்மை செய்யும் பூச்சிகளை அழித்து சாகுபடி செலவை உயர்த்தும்.\n• பயிர் வளர்ச்சிக்குத் தேவைப்பட்டால் வேளாண் அலுவலர் பரிந்துரைக்கும் உயிர் உரங்களைப் பயன்படுத்தலாம்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Nalla aarokkiyamaga irukkira payirukku endha chemical marunthum thelikka thevaiye illa.\n• Thevaillama marunthu thelicha nanmai seiyum poochigal azhinju selavu thaan athigarikkum.\n• Valarchikku thevaippattaal agriculture officer solra bio-fertilizer use pannikonga.\n[Needs expert review]"
+      },
+      "cause": {
+        "title_en": "What keeps the paddy crop healthy?",
+        "title_ta": "நெற்பயிர் ஆரோக்கியமாக இருக்கக் காரணங்கள்",
+        "title_tanglish": "Payir aarokkiyamaga irukka kaaranangal enna?",
+        "keywords_en": [
+          "cause",
+          "healthy reason",
+          "good soil",
+          "vigour",
+          "clean water"
+        ],
+        "keywords_ta": [
+          "காரணம்",
+          "ஆரோக்கிய காரணம்",
+          "வளம்"
+        ],
+        "keywords_tanglish": [
+          "kaaranam",
+          "yen aarokkiyama irukku",
+          "nalla valarchi"
+        ],
+        "answer_en": "• Vigorous certified seeds combined with appropriate seed treatment.\n• Healthy soil ecology with adequate organic matter and balanced micronutrients.\n• Optimal spacing, clean irrigation water, and proper drainage.",
+        "answer_ta": "• சான்றளிக்கப்பட்ட தரமான விதைகள் மற்றும் சரியான விதை நேர்த்தி.\n• போதுமான இயற்கை உரம் மற்றும் சரிவிகித சத்துக்கள் கொண்ட ஆரோக்கியமான மண் வளம்.\n• சரியான இடைவெளி, சுத்தமான பாசன நீர் மற்றும் முறையான வடிகால் வசதி.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Nalla certified vidhai mattrum sariyaana vidhai nerthi (seed treatment).\n• Iyarkai uram niraintha man valai mattrum balanced micronutrients.\n• Sariyana idai veli, nalla thanni paasanam mattrum vadigaal vasathi.\n[Needs expert review]"
+      },
+      "favourable_conditions": {
+        "title_en": "Ideal weather conditions for optimal rice growth",
+        "title_ta": "நெற்பயிரின் சிறந்த வளர்ச்சிக்கு உகந்த சூழல்",
+        "title_tanglish": "Nel nalla valara etha weather mattrum soozhnilai",
+        "keywords_en": [
+          "weather",
+          "climate",
+          "sunlight",
+          "temperature",
+          "ideal condition"
+        ],
+        "keywords_ta": [
+          "வானிலை",
+          "சூரிய ஒளி",
+          "வெப்பநிலை",
+          "வளர்ச்சி"
+        ],
+        "keywords_tanglish": [
+          "weather",
+          "climate",
+          "veyil",
+          "sooriyan",
+          "growth"
+        ],
+        "answer_en": "• Ample bright sunlight during tillering and reproductive stages.\n• Temperatures maintained between 25°C and 32°C.\n• Consistent aeration of roots through cyclical wet and dry irrigation cycles.",
+        "answer_ta": "• தூர் கட்டும் மற்றும் கதிர் வரும் தருணத்தில் நல்ல பிரகாசமான சூரிய ஒளி.\n• 25°C முதல் 32°C வரையிலான மிதமான வெப்பநிலை.\n• வேர்களுக்கு நல்ல காற்றோட்டம் தரும் முறையான காய்ச்சலும் பாய்ச்சலும் பாசனம்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Thoor kattum nerathil nalla bright sooriya velicham.\n• 25°C - 32°C varaiyana vegamaana veyil/veppam.\n• Vergalukku kaathottam kidaikkum sariyaana thanni paasanam.\n[Needs expert review]"
+      },
+      "what_to_do_now": {
+        "title_en": "What should I do now for my healthy crop?",
+        "title_ta": "தற்போது ஆரோக்கியமான பயிருக்கு என்ன செய்ய வேண்டும்?",
+        "title_tanglish": "Ippo nalla payirukku enna seiyanum?",
+        "keywords_en": [
+          "what to do now",
+          "action",
+          "routine",
+          "now",
+          "scan again"
+        ],
+        "keywords_ta": [
+          "இப்போது என்ன செய்ய வேண்டும்",
+          "நடவடிக்கை",
+          "பரிசோதனை"
+        ],
+        "keywords_tanglish": [
+          "what to do now",
+          "ippo enna pannanum",
+          "routine",
+          "next scan"
+        ],
+        "answer_en": "• Continue routine field monitoring and maintain balanced watering.\n• Rescan leaves every 7 to 10 days to ensure early detection of any emerging issues.\n• Follow the TNAU fertilizer split schedule according to your crop's current stage.",
+        "answer_ta": "• வழக்கமான கள ஆய்வைத் தொடர்ந்து மேற்கொண்டு சீரான பாசனத்தைப் பராமரிக்கவும்.\n• ஏதேனும் நோய்த்தொற்று ஆரம்பித்தால் அறிய 7 முதல் 10 நாட்களுக்கு ஒருமுறை மீண்டும் இலைகளை ஸ்கேன் செய்யவும்.\n• பயிரின் தற்போதைய பருவத்திற்கு ஏற்ப TNAU பரிந்துரைத்த உர அட்டவணையைப் பின்பற்றவும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Regular-ah vayalai kavanithu sariyaana thanni paasanam seiyavum.\n• Pudhusa ethavathu noi vantha therinju kollalaam, 7-10 naalukku orumura leaf scan pannunga.\n• TNAU ura schedule padi stage-kku etha maathiri uram split panni podunga.\n[Needs expert review]"
+      },
+      "yield_effect": {
+        "title_en": "Expected yield from healthy paddy crop",
+        "title_ta": "ஆரோக்கியமான நெற்பயிரில் எதிர்பார்க்கப்படும் மகசூல்",
+        "title_tanglish": "Aarokkiyamaana payirilirunthu enna magasool kidaikkum?",
+        "keywords_en": [
+          "yield",
+          "good yield",
+          "harvest",
+          "grain quality",
+          "full yield"
+        ],
+        "keywords_ta": [
+          "மகசூல்",
+          "விளைச்சல்",
+          "தானிய தரம்",
+          "அறுவடை"
+        ],
+        "keywords_tanglish": [
+          "yield",
+          "magasool",
+          "good harvest",
+          "nalla vilaiychal"
+        ],
+        "answer_en": "• Maximizes the genetic yield potential of your chosen variety.\n• Ensures high grain filling percentage, minimal chaffiness, and superior test weight.\n• Delivers maximum market price due to spotless, healthy grains.",
+        "answer_ta": "• நீங்கள் தேர்ந்தெடுத்த நெல் ரகத்தின் முழுமையான மகசூல் திறனைப் பெறலாம்.\n• மணிகள் பதரின்றி முழுமையாக நிறைந்து அதிக எடையுடன் இருக்கும்.\n• புள்ளிகளற்ற சுத்தமான தானியத்தால் சந்தையில் நல்ல விலை கிடைக்கும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Unga nel ragathoda full yield potential-ai muzhuvathum edukkalaam.\n• Nel manigal padhar illaamal muzhumaiyaaga niranju athiga weight tharum.\n• Pulligal illaatha nalla nel maniyaaga iruppathal market-la nalla vilai kidaikkum.\n[Needs expert review]"
+      },
+      "see_officer": {
+        "title_en": "When to consult the Agriculture Officer for advice?",
+        "title_ta": "வேளாண்மை அலுவலரிடம் என்ன ஆலோசனை பெறலாம்?",
+        "title_tanglish": "Aarokkiyama irunthaalum agriculture officer-ah eppo paarkalam?",
+        "keywords_en": [
+          "officer",
+          "agriculture officer",
+          "advice",
+          "soil health",
+          "scheme"
+        ],
+        "keywords_ta": [
+          "வேளாண் அலுவலர்",
+          "அலுவலர்",
+          "ஆலோசனை",
+          "திட்டங்கள்"
+        ],
+        "keywords_tanglish": [
+          "officer",
+          "agriculture officer",
+          "velanmai aluvalar",
+          "schemes",
+          "aalosanai"
+        ],
+        "answer_en": "• Visit your local Agriculture Officer to obtain subsidized certified inputs and soil testing cards.\n• Seek advice on government crop insurance schemes and seasonal advisories.\n• Consult before introducing any new variety or booster product into your field.",
+        "answer_ta": "• மானியத்தில் சான்றளிக்கப்பட்ட இடுபொருட்கள் மற்றும் மண் சுகாதார அட்டை பெற வேளாண் அலுவலரை அணுகலாம்.\n• பயிர் காப்பீட்டுத் திட்டங்கள் மற்றும் பருவ கால ஆலோசனைகளைப் பெறவும்.\n• புதிய ரகங்கள் அல்லது இடுபொருட்களைப் பயன்படுத்தும் முன் அலுவலரிடம் ஆலோசிக்கவும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Subsidized iduporutkal mattrum man vala card peruvatharku agriculture officer-ah sandhikavum.\n• Government crop insurance schemes mattrum paruva aalosanai kettukollavum.\n• Pudhu raggangalo illa fertilizer-o podum munnadi officer aalosanai peravum.\n[Needs expert review]"
+      },
+      "similar_diseases": {
+        "title_en": "Distinguishing healthy leaves from initial infection",
+        "title_ta": "ஆரோக்கியமான இலை மற்றும் ஆரம்ப நிலை நோய் வேறுபாடு",
+        "title_tanglish": "Healthy leaf-kum aaramba noi-kum ulla vithiyaasam",
+        "keywords_en": [
+          "similar",
+          "healthy vs disease",
+          "initial symptom",
+          "early signs"
+        ],
+        "keywords_ta": [
+          "வேறுபாடு",
+          "ஆரம்ப அறிகுறி",
+          "இலை வேறுபாடு"
+        ],
+        "keywords_tanglish": [
+          "similar",
+          "vithiyaasam",
+          "aaramba noi",
+          "difference"
+        ],
+        "answer_en": "• Healthy leaves show smooth surfaces with natural parallel veining and no water-soaked flecks.\n• Initial blast or brown spot begins as tiny pinhead-sized grey or brown specks.\n• Early bacterial blight shows water-soaked wavy streaks along leaf edges in the morning.",
+        "answer_ta": "• ஆரோக்கியமான இலைகள் நீர் கசிவுப் புள்ளிகளோ தழும்புகளோ இன்றி சீரான நரம்புகளுடன் இருக்கும்.\n• ஆரம்ப குலை அல்லது பழுப்பு புள்ளி நோய் மிகச் சிறிய ஊசி முனை போன்ற புள்ளிகளாகத் தொடங்கும்.\n• ஆரம்ப பாக்டீரியா கருகல் காலையில் இலை விளிம்பில் நீர் ஊறிய கோடுகளாகத் தென்படும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Healthy ilaila smooth-aana surface-um seerana narambugalum irukkum; pulligal irukkadhu.\n• Blast illa brown spot aarambathula oosi munai maathiri chinna grey/brown pulliyaaga thondrum.\n• BLB aarambathula kaalaila ilai orathula neer ooriya streaks maathiri kaattum.\n[Needs expert review]"
+      },
+      "which_parts_affected": {
+        "title_en": "Parts of the plant inspected during crop scouting",
+        "title_ta": "கள ஆய்வில் பரிசோதிக்க வேண்டிய பயிரின் உறுப்புகள்",
+        "title_tanglish": "Field check pannum pothu endha pagudhigalai paarkka vendum?",
+        "keywords_en": [
+          "which parts",
+          "inspection parts",
+          "canopy",
+          "tiller",
+          "flag leaf"
+        ],
+        "keywords_ta": [
+          "பரிசோதனை பகுதிகள்",
+          "இலை",
+          "தூர்",
+          "கொடி இலை"
+        ],
+        "keywords_tanglish": [
+          "endha paguthi",
+          "parts to check",
+          "ilai",
+          "thoor",
+          "flag leaf"
+        ],
+        "answer_en": "• Upper canopy and flag leaves: should remain clean, green, and disease-free for maximum grain filling.\n• Lower stem base and collar: check for moisture retention and early fungal presence.\n• Panicle neck: must be firm, green, and rot-free as heading progresses.",
+        "answer_ta": "• மேல் இலைகள் மற்றும் கொடி இலை: தானியங்கள் நன்கு முதிர புள்ளிகளின்றி பச்சையாக இருக்க வேண்டும்.\n• தண்டின் அடிப்பகுதி: ஈரப்பதம் மற்றும் ஆரம்ப பூஞ்சை தாக்குதல் உள்ளதா எனப் பார்க்க வேண்டும்.\n• கதிர் கழுத்துப் பகுதி: கதிர் வரும் போது உறுதியாகவும் அழுகலின்றி பச்சையாகவும் இருக்க வேண்டும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Mael paguthi mattrum kodi ilai (flag leaf): Nel mani nalla vilaya spots illama clean green-ah irukkanum.\n• Thandin adi paguthi: Eerappatham mattrum poonjai irukka nu check pannanum.\n• Kathir kazhuthu: Kathir varum nerathula strong-avum azhugal illamavum irukkanum.\n[Needs expert review]"
+      }
+    }
+  },
+  "other": {
+    "name_en": "Other Paddy Disease / Condition",
+    "name_ta": "பிற நெற்பயிர் நோய் / குறைபாடு",
+    "name_tanglish": "Matra Nel Noi / Nutritional Deficiency",
+    "topics": {
+      "symptoms": {
+        "title_en": "Symptoms of other paddy diseases or stress",
+        "title_ta": "பிற நோய்கள் அல்லது ஊட்டச்சத்துக் குறைபாட்டின் அறிகுறிகள்",
+        "title_tanglish": "Matra noi mattrum nutrient deficiency arikurigalum thotramum",
+        "keywords_en": [
+          "symptom",
+          "symptoms",
+          "sign",
+          "other disease",
+          "deficiency",
+          "stunting",
+          "sheath rot",
+          "tungro",
+          "smut"
+        ],
+        "keywords_ta": [
+          "அறிகுறி",
+          "அறிகுறிகள்",
+          "குறைபாடு",
+          "மஞ்சள் நோய்",
+          "உறை அழுகல்",
+          "துங்ரோ",
+          "கரிப்பூட்டை"
+        ],
+        "keywords_tanglish": [
+          "symptoms",
+          "symptoms enna",
+          "epdi irukkum",
+          "eppadi irukkum",
+          "thotram",
+          "other disease",
+          "deficiency"
+        ],
+        "answer_en": "• Sheath blight: large oval water-soaked lesions on lower leaf sheaths progressing upwards.\n• Tungro virus: stunted plant hills with yellow-orange leaf discolouration and reduced tillering.\n• Nutritional deficiencies (Zinc/Iron): rusty bronzing or yellow striping across younger or older leaves.",
+        "answer_ta": "• உறை அழுகல்/கருகல்: தண்டின் கீழ் இலை உறைகளில் பெரிய நீள்வட்டப் புள்ளிகள் தோன்றி அழுகும்.\n• துங்ரோ வைரஸ் நோய்: செடிகள் குட்டையாகி இலைகள் மஞ்சள்-ஆரஞ்சு நிறமாக மாறி தூர்கள் குறையும்.\n• துத்தநாகம்/இரும்பு குறைபாடு: இலைகளில் துரு போன்ற பழுப்பு நிறத் திட்டுகள் அல்லது மஞ்சள் கோடுகள் தோன்றும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Sheath blight / Sheath rot: Thandu uraila periya oval azhugal pulligal keezhirunthu maele varum.\n• Tungro virus: Chedi kuttaiyaagi (stunted) ilai yellow-orange niramagi thoor kattuvathu korayum.\n• Zinc / Iron deficiency: Ilaila rust maathiri bronze karuppu speckles illa yellow keetrugal varum.\n[Needs expert review]"
+      },
+      "how_it_spreads": {
+        "title_en": "How do other paddy conditions develop or spread?",
+        "title_ta": "பிற நோய்கள் மற்றும் குறைபாடுகள் எவ்வாறு ஏற்படுகின்றன?",
+        "title_tanglish": "Matra noigal eppadi paravum illa varum?",
+        "keywords_en": [
+          "spread",
+          "how it spreads",
+          "insects",
+          "leafhopper",
+          "soil condition",
+          "water"
+        ],
+        "keywords_ta": [
+          "பரவ",
+          "பரவுதல்",
+          "பரவுகிறது",
+          "பூச்சிகள்",
+          "தத்துப்பூச்சி",
+          "மண் வளம்"
+        ],
+        "keywords_tanglish": [
+          "spread",
+          "spread agum",
+          "epadi spread agum",
+          "eppadi paravum",
+          "paravum",
+          "poochigal moolama"
+        ],
+        "answer_en": "• Viral diseases like Tungro are transmitted plant to plant by green leafhopper insect vectors.\n• Soil-borne fungal diseases survive in soil sclerotia and spread through irrigation water.\n• Nutritional stress occurs due to alkaline soil pH, salinity, or unbalanced fertilizer application.",
+        "answer_ta": "• துங்ரோ போன்ற வைரஸ் நோய்கள் பச்சை தத்துப்பூச்சிகள் மூலம் ஒரு பயிரிலிருந்து மற்றொரு பயிருக்கு பரவுகிறது.\n• உறை கருகல் போன்ற மண் சார்ந்த பூஞ்சைகள் நீர்ப்பாசனம் மூலம் பரவும்.\n• ஊட்டச்சத்துக் குறைபாடுகள் களர் நிலம், கார அமில நிலை மற்றும் சமநிலையற்ற உரமிடுதலால் ஏற்படுகின்றன.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Tungro maathiri virus noigal pacha thathupoochi (green leafhopper) moolama paravum.\n• Sheath blight poonjaigal mannil sclerotia aagi thanni paasanam moolama paravum.\n• Chatthu kuraipaadugal kalar nilam mattrum samaiyillatha ura alavinaal varugirathu.\n[Needs expert review]"
+      },
+      "prevention": {
+        "title_en": "How to manage and prevent other paddy diseases?",
+        "title_ta": "பிற நோய்கள் மற்றும் குறைபாடுகளைத் தடுப்பது மற்றும் கட்டுப்படுத்துவது எப்படி?",
+        "title_tanglish": "Matra noigal thadukka mattrum spread reduce panna enna seiyanum?",
+        "keywords_en": [
+          "prevent",
+          "prevention",
+          "stop",
+          "reduce",
+          "control",
+          "avoid",
+          "spread reduce",
+          "stop spread",
+          "next season",
+          "soil amendment"
+        ],
+        "keywords_ta": [
+          "தடுக்க",
+          "குறைக்க",
+          "பரவுவதை குறைக்க",
+          "கட்டுப்படுத்த",
+          "அடுத்த பருவம்",
+          "மண் சீர்திருத்தம்"
+        ],
+        "keywords_tanglish": [
+          "thadukka",
+          "kuraikka",
+          "reduce panna",
+          "spread reduce",
+          "spread reduce panna",
+          "epadi spread pannuratha reduce panna",
+          "stop panna",
+          "next season"
+        ],
+        "answer_en": "• Conduct periodic soil tests and apply recommended organic amendments and zinc/potassium fertilizers.\n• Monitor for insect vectors like green leafhoppers to prevent viral disease transmission.\n• Compare symptoms against the Disease Library reference photos and consult your agriculture officer.",
+        "answer_ta": "• சீரான இடைவெளியில் மண் ஆய்வு செய்து பரிந்துரைக்கப்பட்ட இயற்கை உரங்கள் மற்றும் துத்தநாகத்தை இடவும்.\n• வைரஸ் நோய் பரவாமல் தடுக்க தத்துப்பூச்சிகளை ஆரம்பத்திலேயே கண்காணித்து கட்டுப்படுத்தவும்.\n• நோய் நூலகத்தின் புகைப்படங்களுடன் ஒப்பிட்டுப் பார்த்து வேளாண்மை அலுவலரை அணுகவும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Mann test eduthu thevaiyana iyarkai uram mattrum zinc/potash urangalai podavum.\n• Virus noi paravama irukka pacha thathupoochigala aarambathiliye kavanithu thadukkavum.\n• Disease Library photos paarthu unga leaf-oda compare panni agriculture officer-ah sandhikavum.\n[Needs expert review]"
+      },
+      "treatment_medicine": {
+        "title_en": "Treatment advice for unclassified disease or stress",
+        "title_ta": "பிற நோய்கள் அல்லது குறைபாட்டுக்கான சிகிச்சை மற்றும் மருந்து",
+        "title_tanglish": "Matra noigallukku enna marunthu thelikkanum?",
+        "keywords_en": [
+          "medicine",
+          "spray",
+          "treatment",
+          "cure",
+          "what to apply",
+          "other medicine"
+        ],
+        "keywords_ta": [
+          "மருந்து",
+          "தெளிப்பு",
+          "தெளிக்க",
+          "மருந்தளவு",
+          "சிகிச்சை"
+        ],
+        "keywords_tanglish": [
+          "marunthu",
+          "marundhu",
+          "maruthu",
+          "thelikka",
+          "thelikkanum",
+          "spray panna"
+        ],
+        "answer_en": "• Do not spray indiscriminate chemicals without confirming whether the problem is fungal, viral, or nutritional.\n• For micronutrient deficiency, apply authorized soil or foliar nutrients as guided by your agriculture officer.\n• Always verify with the TNAU Crop Production Guide or local agricultural officer before spraying.",
+        "answer_ta": "• இது பூஞ்சை நோயா, வைரஸா அல்லது சத்துக் குறைபாடா என்பதை உறுதி செய்யாமல் மருந்துகளைத் தெளிக்க வேண்டாம்.\n• சத்துக் குறைபாடாக இருந்தால் வேளாண் அலுவலர் பரிந்துரைக்கும் நுண்ணூட்ட உரங்களை இடவும்.\n• எதையும் தெளிக்கும் முன் TNAU வழிகாட்டி அல்லது வேளாண்மை அலுவலரின் ஆலோசனையைப் பெறவும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Ithu poonjaiya, virus-a illa nutrient deficiency-a nu theriyama endha chemical-aiyum thelikka koodadhu.\n• Chatthu kuraipaattai sari panna agriculture officer solra micro-nutrient spray mattum pannunga.\n• TNAU guide illa unga velanmai aluvalar kitta kaattitu thaan marunthu adikanum.\n[Needs expert review]"
+      },
+      "cause": {
+        "title_en": "Possible causes of symptoms in other category",
+        "title_ta": "இதர பாதிப்புகளுக்கான சாத்தியமான காரணங்கள்",
+        "title_tanglish": "Intha maathiri arikurigal vara kaaranangal enna?",
+        "keywords_en": [
+          "cause",
+          "caused by",
+          "pathogen",
+          "virus",
+          "deficiency",
+          "why",
+          "reason"
+        ],
+        "keywords_ta": [
+          "காரணம்",
+          "ஏன் வருகிறது",
+          "உண்டாக்குவது எது",
+          "வைரஸ்",
+          "குறைபாடு"
+        ],
+        "keywords_tanglish": [
+          "kaaranam",
+          "yen varuthu",
+          "edhanala varuthu",
+          "pathogen",
+          "virus",
+          "deficiency"
+        ],
+        "answer_en": "• Fungal organisms: such as Rhizoctonia solani (Sheath Blight) or Sarocladium oryzae (Sheath Rot).\n• Plant viruses: Rice Tungro Virus transmitted by leafhopper vectors.\n• Soil or abiotic disorders: Zinc deficiency (Khaira disease), Iron toxicity, or soil salinity.",
+        "answer_ta": "• பூஞ்சை நோய்கள்: உறை கருகல் (Rhizoctonia) அல்லது உறை அழுகல் (Sarocladium) பூஞ்சைகள்.\n• வைரஸ் தொற்றுகள்: தத்துப்பூச்சிகளால் பரவும் நெல் துங்ரோ வைரஸ்.\n• மண் மற்றும் ஊட்டச்சத்து குறைபாடுகள்: துத்தநாகக் குறைபாடு (கைரா நோய்), இரும்பு நச்சு அல்லது உவர்த்தன்மை.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Poonjai noigal: Sheath Blight (Rhizoctonia) illa Sheath Rot (Sarocladium) poonjaigal.\n• Virus: Thathupoochi paravum Rice Tungro Virus.\n• Mann kuraipaadu: Zinc deficiency (Khaira noi), Iron toxicity illa nilathil uppu thanmai.\n[Needs expert review]"
+      },
+      "favourable_conditions": {
+        "title_en": "Conditions favouring other disease developments",
+        "title_ta": "பிற நோய்கள் அல்லது குறைபாடுகள் தோன்ற சாதகமான சூழல்",
+        "title_tanglish": "Intha noigal thondra saadhagamaana soozhnilai",
+        "keywords_en": [
+          "weather",
+          "climate",
+          "soil condition",
+          "humidity",
+          "stagnation",
+          "temperature"
+        ],
+        "keywords_ta": [
+          "வானிலை",
+          "சூழல்",
+          "மண் வளம்",
+          "ஈரப்பதம்"
+        ],
+        "keywords_tanglish": [
+          "weather",
+          "climate",
+          "soozhnilai",
+          "season"
+        ],
+        "answer_en": "• Continuous high humidity and stagnant water favor sheath blight and sheath rot.\n• Presence of volunteer weeds and vector insect populations aids viral spread.\n• Ill-drained waterlogged acid soils trigger iron toxicity, while alkaline soils lock up available zinc.",
+        "answer_ta": "• தொடர் காற்றில் ஈரப்பதம் மற்றும் வயலில் நீண்ட காலம் தேங்கும் நீர் உறை கருகலுக்கு சாதகமானது.\n• வரப்புகளில் உள்ள களைகள் மற்றும் தத்துப்பூச்சி பெருக்கம் வைரஸ் நோய்களைத் தூண்டும்.\n• வடிகால் வசதியற்ற அமில மண் இரும்பு நஞ்சையும், களர் மண் துத்தநாகக் குறைபாட்டையும் ஏற்படுத்தும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Thodar eerappatham mattrum thanni thengi nirkum vayalil Sheath Blight thondrum.\n• Varappu kalaigal mattrum pooichi kootam iruntha virus vegama paravum.\n• Thanni vadigaatha acid mannil iron toxicity-yum kalar mannil zinc korayum.\n[Needs expert review]"
+      },
+      "what_to_do_now": {
+        "title_en": "What to do when crop diagnosis shows Other",
+        "title_ta": "முடிவு 'பிற பாதிப்பு' என வரும்போது என்ன செய்ய வேண்டும்?",
+        "title_tanglish": "Result Other nu vantha udane enna seiyanum?",
+        "keywords_en": [
+          "what to do now",
+          "action",
+          "immediate",
+          "other result",
+          "steps"
+        ],
+        "keywords_ta": [
+          "இப்போது என்ன செய்ய வேண்டும்",
+          "உடனடி நடவடிக்கை",
+          "பரிசோதனை"
+        ],
+        "keywords_tanglish": [
+          "what to do now",
+          "ippo enna pannanum",
+          "action",
+          "udane enna seiyanum"
+        ],
+        "answer_en": "• Open the Disease Library page and compare your scanned leaf against the reference photos.\n• Note whether the symptoms are spots, streaks, leaf blighting, or plant stunting.\n• Take a fresh leaf sample to your local agriculture officer for confirmed laboratory diagnosis.",
+        "answer_ta": "• நோய் நூலகம் (Disease Library) பக்கத்தைத் திறந்து உங்கள் இலையை மாதிரிப் புகைப்படங்களுடன் ஒப்பிடவும்.\n• பாதிப்பு புள்ளியா, கீற்றா, இலை அழுகலா அல்லது செடி குட்டையாக உள்ளதா எனக் கவனிக்கவும்.\n• பாதிக்கப்பட்ட இலையின் மாதிரியுடன் உங்கள் வட்டார வேளாண்மை அலுவலரை நேரில் அணுகவும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Disease Library page-ah open panni unga scan leaf-oda reference photos-ah compare pannunga.\n• Paathippu pulligala, keetrugala, azhugala illa chedi kuttai aagirukka nu nalla paarkavum.\n• Ilai sample-ah eduthutu unga local agriculture officer-idam kaatti direct diagnosis peravum.\n[Needs expert review]"
+      },
+      "yield_effect": {
+        "title_en": "Impact of other diseases or deficiencies on yield",
+        "title_ta": "பிற நோய்கள் அல்லது குறைபாடுகளால் மகசூலில் ஏற்படும் பாதிப்பு",
+        "title_tanglish": "Matra noigal mattrum deficiency-al magasoolil paathippu",
+        "keywords_en": [
+          "yield",
+          "loss",
+          "deficiency impact",
+          "yield reduction"
+        ],
+        "keywords_ta": [
+          "மகசூல்",
+          "இழப்பு",
+          "குறைபாடு பாதிப்பு",
+          "விளைச்சல்"
+        ],
+        "keywords_tanglish": [
+          "yield",
+          "loss",
+          "magasool",
+          "padhar",
+          "evlo loss"
+        ],
+        "answer_en": "• Sheath blight and sheath rot impede panicle emergence, resulting in choked, poorly filled ears.\n• Tungro halts tillering completely and causes severe loss if infected before the maximum tillering stage.\n• Zinc deficiency stunts early development and delays crop maturity by several weeks.",
+        "answer_ta": "• உறை கருகல் மற்றும் உறை அழுகல் கதிர் வெளிவருவதைத் தடுத்து முழுமையாகப் பதராக்கும்.\n• துங்ரோ நோய் தூர் கட்டுவதை முழுமையாக நிறுத்தி கடுமையான மகசூல் இழப்பை உண்டாக்கும்.\n• துத்தநாகக் குறைபாடு ஆரம்ப வளர்ச்சியை முடக்கி அறுவடையைத் தாமதப்படுத்தும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Sheath blight mattrum sheath rot kathir veliye varuvathai thaduthu 100% padhar aakkum.\n• Tungro noi vantha thoor kattuvathe ninnu poi periya magasool izhappu undaagum.\n• Zinc deficiency naatru valarchiyai thaduthu aruvadaiyai romba vaaram delay aakkum.\n[Needs expert review]"
+      },
+      "see_officer": {
+        "title_en": "When to consult the Agriculture Officer for unidentified problems?",
+        "title_ta": "அடையாளம் தெரியாத பாதிப்புகளுக்கு வேளாண் அலுவலரை அணுகுவது எப்போது?",
+        "title_tanglish": "Puriyatha noi arikurigalukku agriculture officer-ah eppo paarkalam?",
+        "keywords_en": [
+          "officer",
+          "agriculture officer",
+          "aao",
+          "kvk",
+          "contact officer",
+          "unclear problem"
+        ],
+        "keywords_ta": [
+          "வேளாண் அலுவலர்",
+          "அலுவலர்",
+          "தொடர்பு",
+          "ஆலோசனை"
+        ],
+        "keywords_tanglish": [
+          "officer",
+          "agriculture officer",
+          "velanmai aluvalar",
+          "aao",
+          "kvk"
+        ],
+        "answer_en": "• Consult your Assistant Agriculture Officer (AAO) immediately whenever leaf symptoms do not match common blast or brown spot.\n• Bring photos and fresh field samples for accurate testing and targeted recommendations.\n• Follow the TNAU advisory rather than guessing or applying unverified combinations.",
+        "answer_ta": "• இலை அறிகுறிகள் வழக்கமான குலை அல்லது பழுப்பு புள்ளியுடன் பொருந்தாத போது உடனடியாக வேளாண் அலுவலரை அணுகவும்.\n• துல்லியமான ஆய்வுக்குப் புதிய இலை மாதிரிகளையும் புகைப்படங்களையும் கொண்டு செல்லவும்.\n• சந்தேகம் உள்ள நிலையில் எவ்வித ரசாயன மருந்துகளையும் சுயமாகப் பயன்படுத்த வேண்டாம்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Arikurigala purinjika mudiyala na udane local agriculture officer (AAO)-ah sandhikavum.\n• Clear-aana photo mattrum fresh leaf sample eduthutu ponga sariyaana aalosanai pera.\n• Theriyama endha chemical-aiyum mix panni thelikka koodadhu; officer solra TNAU advice kelunga.\n[Needs expert review]"
+      },
+      "similar_diseases": {
+        "title_en": "Comparing other common rice diseases",
+        "title_ta": "இதர பொதுவான நெற்பயிர் நோய்களின் ஒப்பீடு",
+        "title_tanglish": "Matra nel noigalin oppeedu",
+        "keywords_en": [
+          "similar",
+          "similar disease",
+          "compare",
+          "sheath blight vs sheath rot",
+          "tungro vs deficiency"
+        ],
+        "keywords_ta": [
+          "ஒப்பீடு",
+          "வேறுபாடு",
+          "நோய்கள் வேறுபாடு"
+        ],
+        "keywords_tanglish": [
+          "similar",
+          "similar diseases",
+          "oppeedu",
+          "vithiyaasam"
+        ],
+        "answer_en": "• Sheath Blight vs Sheath Rot: Sheath blight forms snake-skin banded lesions; sheath rot forms uniform greyish-brown rot on flag leaf sheath.\n• Tungro vs Zinc Deficiency: Tungro yellowing starts from older leaves with stunted tillers; zinc deficiency forms bronze rust spots along the midrib.\n• False Smut: produces conspicuous velvety orange-yellow or greenish-black smut balls replacing individual grains.",
+        "answer_ta": "• உறை கருகல் vs உறை அழுகல்: உறை கருகல் பாம்புத் தோல் போன்ற பட்டைகளாக இருக்கும்; உறை அழுகல் கொடி இலை உறையில் ஒரே சீரான அழுகலை உண்டாக்கும்.\n• துங்ரோ vs துத்தநாகக் குறைபாடு: துங்ரோவில் இலை நுனி ஆரஞ்சு-மஞ்சளாகும்; துத்தநாகக் குறைபாட்டில் இலை நரம்புகளில் துரு நிறப் புள்ளிகள் தோன்றும்.\n• கரிப்பூட்டை நோய்: தனித்தனி நெல் மணிகளுக்குப் பதிலாகப் பஞ்சு போன்ற மஞ்சள் அல்லது கறுப்பு பந்துகள் தோன்றும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Sheath Blight vs Sheath Rot: Sheath blight paambu thol maathiri bands tharum; Sheath rot kodi ilai uraila saambal azhugal tharum.\n• Tungro vs Zinc deficiency: Tungro ilai yellow-orange aagi chedi kuttai aagum; zinc deficiency ilaila rust maathiri bronze speckles varum.\n• False Smut (Kari poottai): Nel manigalukku pathila velvet orange illa karuppu panthu maathiri smut balls varum.\n[Needs expert review]"
+      },
+      "which_parts_affected": {
+        "title_en": "Plant parts affected in other disease conditions",
+        "title_ta": "பிற நோய்களால் பாதிக்கப்படும் தாவர உறுப்புகள்",
+        "title_tanglish": "Matra noigalil endha plant parts paathikkapadum?",
+        "keywords_en": [
+          "which parts",
+          "plant parts",
+          "leaf sheath",
+          "whole plant",
+          "grains",
+          "tillers"
+        ],
+        "keywords_ta": [
+          "பாதிக்கப்படும் உறுப்புகள்",
+          "இலை உறை",
+          "தானியம்",
+          "முழு செடி"
+        ],
+        "keywords_tanglish": [
+          "endha paguthi",
+          "plant parts",
+          "ilai urai",
+          "nel manigal",
+          "muzhu payir"
+        ],
+        "answer_en": "• Leaf sheaths: primarily attacked in sheath blight, sheath rot, and stem rot.\n• Entire plant canopy: stunted and yellowed in viral tungro or grassy stunt.\n• Grains and panicles: attacked by grain discoloration and false smut balls.",
+        "answer_ta": "• இலை உறைகள்: உறை கருகல், உறை அழுகல் மற்றும் தண்டு அழுகல் நோய்களால் பாதிக்கப்படும்.\n• முழு செடி: துங்ரோ அல்லது புல் குட்டை வைரஸ் நோயால் செடி முழுதும் குட்டையாகி மஞ்சள் நிறமாகும்.\n• கதிர் மற்றும் தானியங்கள்: தானிய நிறமாற்றம் மற்றும் கரிப்பூட்டை நோயால் மணிகள் பாதிக்கப்படும்.\n[வல்லுநர் சரிபார்ப்பு தேவை / Needs expert review]",
+        "answer_tanglish": "• Ilai urai: Sheath blight, Sheath rot mattrum stem rot moolama urai azhugum.\n• Muzhu payir: Tungro virus illa grassy stunt moolama chedi muzhuka stunted aagi yellow aagum.\n• Kathir mattrum nel manigal: Grain discoloration mattrum false smut moolama manigal padhar aagum.\n[Needs expert review]"
+      }
+    }
+  }
+}

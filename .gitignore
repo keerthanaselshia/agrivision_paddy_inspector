@@ -1,0 +1,9 @@
+raw/
+final/
+processed/
+venv/
+venv2/
+__pycache__/
+*.zip
+kaggle.json
+.env

@@ -1,0 +1,481 @@
+"""
+core/qa_engine.py  –  Trilingual Offline Paddy Disease Q&A Engine for AgriVision.
+
+Features:
+  • Knowledge base per disease loaded from app/data/qa_knowledge.json
+  • Scoped to detected disease class (blast, blb, brown_spot, healthy, other)
+  • Trilingual detection & response:
+      - Tamil script (தமிழ்)  -> responds in pure Tamil (answer_ta)
+      - Tanglish (Romanized) -> responds in natural Tanglish (answer_tanglish)
+      - English             -> responds in clear English (answer_en)
+  • High-precision intent matching (Treatment/Spray, Dosage, Prevention, Spread,
+    Weather, Fertilizer, Symptoms, Cause, Variety, Harvest, Severity, Definition)
+  • Dynamic injection of live scan metrics in matching language
+  • Multi-turn conversation context for follow-up questions
+  • Unanswered question logging to SQLite history_db
+  • Offline-first (no cloud APIs required)
+"""
+
+import json
+import re
+import urllib.request
+from pathlib import Path
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
+try:
+    from history_db import log_unanswered_question
+except ImportError:
+    from app.history_db import log_unanswered_question
+
+_DATA_FILE = Path(__file__).resolve().parent.parent / "data" / "qa_knowledge.json"
+
+# In-memory knowledge base cache
+_QA_DATA: dict | None = None
+_VECTORIZERS: dict[str, TfidfVectorizer] = {}
+_TOPIC_MATRICES: dict[str, any] = {}
+_TOPIC_KEYS: dict[str, list[str]] = {}
+
+# Characteristic vocabulary for Tanglish detection
+_TANGLISH_PATTERNS = [
+    r"\b(enna|ethu|eppadi|epdi|yeppadi|yepdi|evvalavu|yevvalavu|yenna|ethavathu|edhavadhu)\b",
+    r"\b(marunthu|marundu|adikka|adikkanum|thelikka|thelikkanum|thelichu)\b",
+    r"\b(spray panna|spray pannanum|spray pannalama|spray panradhu)\b",
+    r"\b(pannanum|pannalama|pannum|podanum|podalama|podatheenga)\b",
+    r"\b(noi|nooi|varuthu|vanthurukku|vantha|paravum|paravuthu|paravama|paravuma)\b",
+    r"\b(thadukka|thadukkurathu|thaduppathu|kaappaathurathu|kaapathurathu)\b",
+    r"\b(ilai|ilaigal|kathir|thandu|kanu|kazhuthu|karugal|pulli|pulligal)\b",
+    r"\b(vayal|vayalla|thanni|neer|paasanam|varappu|kalai)\b",
+    r"\b(urram|uram|urea|potash|saambral|thazhai)\b",
+    r"\b(vidhai|nerthi|nadanum|naatru|aruvadai|kaalam|neram)\b",
+    r"\b(solla|sollunga|theriyanum|irukka|irukku|irukkum|koodatha|koodathu)\b",
+    r"\b(aagum|aachu|aaguthu|vara|varum|intha|antha|oru|endha|edhuvum|edhukku|yen|edharku|eppo|eppa)\b",
+    r"\b(seekiram|nalla|rombha|romba|alavu|ragam|pasael|padhar)\b",
+]
+
+# High-priority intent keywords for accurate topic matching
+_INTENT_MAP = {
+    "treatment_spray": {
+        "en": ["spray", "medicine", "cure", "chemical", "fungicide", "bactericide", "what to apply", "remedy", "control measure", "drug"],
+        "ta": ["மருந்து", "தெளிப்பு", "தெளிக்க", "கட்டுப்படுத்த", "குணப்படுத்த", "பூஞ்சைக்கொல்லி", "பாக்டீரியாக்கொல்லி"],
+        "tanglish": ["marunthu", "marundu", "thelikkanum", "adikkanum", "spray panna", "cure", "enna spray", "marunthu enna"],
+    },
+    "dosage": {
+        "en": ["dosage", "dose", "how much", "quantity", "grams", "ratio", "ml", "per litre", "per acre", "amount to mix"],
+        "ta": ["மருந்தளவு", "அளவு", "எவ்வளவு", "கிராம்", "மில்லி", "லிட்டருக்கு", "ஏக்கருக்கு", "விகிதம்"],
+        "tanglish": ["dosage", "evvalavu", "yevvalavu", "alavu", "ethana gram", "ml", "quantity", "evvalavu marunthu"],
+    },
+    "prevention": {
+        "en": ["prevent", "prevention", "stop coming back", "next season", "protect crop", "seed treatment", "avoid recurrence"],
+        "ta": ["தடுப்பது எப்படி", "வராமல் தடுக்க", "அடுத்த பருவம்", "விதை நேர்த்தி", "முன்னெச்சரிக்கை", "பாதுகாப்பு"],
+        "tanglish": ["thadukka", "thadukkurathu", "thaduppathu", "varama thadukka", "next season", "seed treatment", "stop panna"],
+    },
+    "spread": {
+        "en": ["spread", "transmission", "airborne", "contagious", "transmit", "from neighbor", "wind", "rain splash"],
+        "ta": ["பரவும்", "பரவுதல்", "பரவுகிறது", "எப்படி பரவுகிறது", "எவ்வாறு பரவுகிறது", "காற்று", "மழை", "அடுத்த வயல்", "தொற்று"],
+        "tanglish": ["spread", "paravum", "paravuthu", "eppadi paravum", "kaathula", "adutha vayalukku"],
+    },
+    "favourable_weather": {
+        "en": ["weather", "climate", "temperature", "humidity", "rain", "dew", "cloudy", "fog", "favourable condition"],
+        "ta": ["வானிலை", "பனி", "மழை", "வெப்பநிலை", "ஈரப்பதம்", "சூழல்", "மேகமூட்டம்"],
+        "tanglish": ["weather", "climate", "pani kaalam", "mazhai kaalam", "eerappatham", "season"],
+    },
+    "fertilizer_advice": {
+        "en": ["fertilizer", "urea", "nitrogen", "potash", "potassium", "zinc", "manure", "npk", "nutrient"],
+        "ta": ["உரம்", "யூரியா", "தழைச்சத்து", "பொட்டாஷ்", "துத்தநாகம்", "சாம்பல் சத்து", "உரமிட"],
+        "tanglish": ["uram", "urram", "urea", "potash", "fertilizer", "nitrogen", "urea podalama"],
+    },
+    "symptoms": {
+        "en": ["symptom", "symptoms", "look like", "appearance", "spots", "lesion", "lesions", "damage signs", "how it affects the leaf"],
+        "ta": ["அறிகுறி", "அறிகுறிகள்", "தோற்றம்", "எப்படி இருக்கும்", "புள்ளிகள்", "இலை சேதம்"],
+        "tanglish": ["symptoms", "epdi irukkum", "eppadi irukkum", "thotram", "pulligal", "damage", "signs"],
+    },
+    "cause": {
+        "en": ["cause", "caused by", "pathogen", "fungus name", "bacteria name", "why does it occur", "reason"],
+        "ta": ["காரணம்", "ஏன் வருகிறது", "உண்டாக்குவது எது", "காரணி", "எதனால்"],
+        "tanglish": ["kaaranam", "yen varuthu", "edhanala varuthu", "pathogen", "reason"],
+    },
+    "seed_variety_advice": {
+        "en": ["variety", "varieties", "cultivar", "seed", "resistant variety", "tolerant variety", "when to scan next", "next scan"],
+        "ta": ["ரகம்", "ரகங்கள்", "எதிர்ப்பு ரகம்", "விதை", "அடுத்த பரிசோதனை"],
+        "tanglish": ["ragam", "ethirpu ragam", "seeds", "variety", "cultivar", "eppa scan pannanum", "next scan"],
+    },
+    "harvest_safety": {
+        "en": ["harvest", "waiting period", "safety interval", "yield loss", "chaffy", "grain filling"],
+        "ta": ["அறுவடை", "பயிர் காப்பு காலம்", "பாதுகாப்பு", "தானியம்", "பதர்", "மகசூல்"],
+        "tanglish": ["aruvadai", "harvest", "padhar", "waiting period", "safety", "magasool"],
+    },
+    "severity_meaning": {
+        "en": ["severity", "damage percentage", "grade meaning", "damage level", "percent damage", "my scan score"],
+        "ta": ["சேத சதவீதம்", "தீவிரம்", "கிரேடு", "பாதிப்பு அளவு"],
+        "tanglish": ["severity", "percentage", "damage level", "evvalavu paathippu", "score"],
+    },
+    "what_is_it": {
+        "en": ["what is", "tell me about", "explain", "disease overview", "what does healthy mean"],
+        "ta": ["என்ன நோய்", "விளக்கம்", "பற்றி சொல்லுங்கள்", "என்றால் என்ன"],
+        "tanglish": ["na enna", "pathi sollunga", "intha noi na enna", "explain"],
+    },
+}
+
+
+def _load_qa_data() -> dict:
+    global _QA_DATA
+    if _QA_DATA is None:
+        if _DATA_FILE.exists():
+            with open(_DATA_FILE, "r", encoding="utf-8") as f:
+                _QA_DATA = json.load(f)
+        else:
+            _QA_DATA = {}
+    return _QA_DATA
+
+
+def is_tamil_text(text: str) -> bool:
+    """Check if the text contains Tamil Unicode characters."""
+    return bool(re.search(r"[\u0b80-\u0bff]", text))
+
+
+def is_tanglish_text(text: str) -> bool:
+    """Check if the text contains Tamil written in Latin script (Tanglish)."""
+    if is_tamil_text(text):
+        return False
+    t_clean = text.lower()
+    for pat in _TANGLISH_PATTERNS:
+        if re.search(pat, t_clean):
+            return True
+    return False
+
+
+def detect_language(text: str, fallback_lang: str = "en") -> str:
+    """Detect language as 'ta' (Tamil script), 'tanglish' (Romanized Tamil), or 'en' (English)."""
+    if is_tamil_text(text):
+        return "ta"
+    if is_tanglish_text(text):
+        return "tanglish"
+    return fallback_lang if fallback_lang in ["ta", "tanglish", "en"] else "en"
+
+
+def _clean_text(s: str) -> str:
+    s = s.lower()
+    s = re.sub(r"[^\w\s\u0b80-\u0bff]", " ", s)
+    return " ".join(s.split())
+
+
+def _build_index_for_disease(disease: str, qa_data: dict):
+    """Build TF-IDF vectorizer and matrix for all topics of a disease."""
+    cache_key = disease.lower().strip()
+    if cache_key in _VECTORIZERS:
+        return _VECTORIZERS[cache_key], _TOPIC_MATRICES[cache_key], _TOPIC_KEYS[cache_key]
+
+    d_info = qa_data.get(cache_key) or qa_data.get("other") or {}
+    topics = d_info.get("topics", {})
+
+    corpus = []
+    keys = []
+    for t_key, t_val in topics.items():
+        keys.append(t_key)
+        text_parts = [
+            t_val.get("title_en", ""),
+            t_val.get("title_ta", ""),
+            t_val.get("title_tanglish", ""),
+            " ".join(t_val.get("keywords_en", [])),
+            " ".join(t_val.get("keywords_ta", [])),
+            " ".join(t_val.get("keywords_tanglish", [])),
+            t_val.get("answer_en", ""),
+            t_val.get("answer_ta", ""),
+            t_val.get("answer_tanglish", ""),
+        ]
+        doc = _clean_text(" ".join(text_parts))
+        corpus.append(doc)
+
+    if not corpus:
+        corpus = ["rice paddy disease question answer"]
+        keys = ["general"]
+
+    vec = TfidfVectorizer(token_pattern=r"(?u)\b\w+\b")
+    matrix = vec.fit_transform(corpus)
+
+    _VECTORIZERS[cache_key] = vec
+    _TOPIC_MATRICES[cache_key] = matrix
+    _TOPIC_KEYS[cache_key] = keys
+    return vec, matrix, keys
+
+
+def _try_ollama_rephrase(prompt: str, base_answer: str) -> str:
+    """Optional: If local Ollama is active on 11434, rephrase the answer without inventing facts."""
+    try:
+        url = "http://localhost:11434/api/generate"
+        payload = {
+            "model": "qwen2.5:0.5b",
+            "prompt": f"You are a helpful rice agriculture assistant. Based ONLY on this exact fact: '{base_answer}', rephrase it clearly in 1-2 farmer-friendly sentences to answer this question: '{prompt}'. Do NOT invent new chemical names or numbers.",
+            "stream": False,
+        }
+        data = json.dumps(payload).encode("utf-8")
+        req = urllib.request.Request(url, data=data, headers={"Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=1.5) as resp:
+            res = json.loads(resp.read().decode("utf-8"))
+            out = res.get("response", "").strip()
+            if out and len(out) > 10:
+                return out
+    except Exception:
+        pass
+    return base_answer
+
+
+def ask_question(
+    question: str,
+    disease: str,
+    scan_data: dict | None = None,
+    conversation_history: list[dict] | None = None,
+    preferred_lang: str | None = None,
+) -> dict:
+    """Process a user question against the diagnosed disease knowledge base in English, Tamil, or Tanglish.
+
+    Returns:
+      {
+        "topic_id": str,
+        "matched": bool,
+        "answer": str,
+        "title": str,
+        "suggestions": list[dict], # [{"topic_id": ..., "title": ...}]
+        "lang": str,               # 'en', 'ta', or 'tanglish'
+        "confidence_score": float
+      }
+    """
+    qa_data = _load_qa_data()
+    q_raw = question.strip()
+    if not q_raw:
+        return {
+            "topic_id": None,
+            "matched": False,
+            "answer": "Please ask a question about your rice crop.",
+            "title": "",
+            "suggestions": [],
+            "lang": "en",
+            "confidence_score": 0.0,
+        }
+
+    # Detect exact language of the query: Tamil script, Tanglish, or English
+    detected_lang = detect_language(q_raw, fallback_lang=preferred_lang or "en")
+    lang = detected_lang
+
+    # Normalize disease key
+    d_key = disease.lower().strip()
+    if d_key not in qa_data:
+        if "blast" in d_key:
+            d_key = "blast"
+        elif "blb" in d_key or "bacterial" in d_key:
+            d_key = "blb"
+        elif "brown" in d_key:
+            d_key = "brown_spot"
+        elif "healthy" in d_key:
+            d_key = "healthy"
+        else:
+            d_key = "other"
+
+    disease_info = qa_data.get(d_key, qa_data.get("other", {}))
+    topics = disease_info.get("topics", {})
+
+    vec, matrix, keys = _build_index_for_disease(d_key, qa_data)
+
+    q_clean = _clean_text(q_raw)
+    q_vec = vec.transform([q_clean])
+    sims = cosine_similarity(q_vec, matrix)[0]
+
+    # Keyword scoring and intent-driven priority matching
+    scores = []
+    q_tokens = set(q_clean.split())
+
+    # Check for follow-up keywords
+    follow_up_tokens = {
+        "much", "how", "dose", "dosage", "apply", "grams", "when", "spray",
+        "அளவு", "எவ்வளவு", "தெளிப்பு", "evvalavu", "alavu", "ethana"
+    }
+    is_follow_up = bool(q_tokens.intersection(follow_up_tokens)) and bool(conversation_history)
+    last_topic = conversation_history[-1].get("topic_id") if (conversation_history and is_follow_up) else None
+
+    # Check explicit intent triggers from _INTENT_MAP
+    detected_intents = {}
+    for t_intent, kw_groups in _INTENT_MAP.items():
+        intent_kw = kw_groups.get("en", []) + kw_groups.get("ta", []) + kw_groups.get("tanglish", [])
+        for kw in intent_kw:
+            kw_c = kw.lower()
+            if " " in kw_c and kw_c in q_clean:
+                detected_intents[t_intent] = max(detected_intents.get(t_intent, 0.0), 1.6)
+            elif kw_c in q_tokens:
+                # Give high weight to domain keywords
+                weight = 1.3 if len(kw_c) > 3 else 0.8
+                detected_intents[t_intent] = max(detected_intents.get(t_intent, 0.0), weight)
+
+    for idx, t_key in enumerate(keys):
+        t_val = topics.get(t_key, {})
+        base_sim = float(sims[idx])
+
+        # Exact keyword matches from knowledge base
+        kw_en = [k.lower() for k in t_val.get("keywords_en", [])]
+        kw_ta = [k.lower() for k in t_val.get("keywords_ta", [])]
+        kw_tang = [k.lower() for k in t_val.get("keywords_tanglish", [])]
+        all_kw = kw_en + kw_ta + kw_tang
+
+        kw_score = 0.0
+        for kw in all_kw:
+            if kw in q_clean:
+                # Avoid stopwords like "what", "is" from dominating
+                if kw in ["what is", "what", "is", "this", "blast", "rice"]:
+                    kw_score += 0.08
+                else:
+                    kw_score += 0.40
+            elif any(token in kw.split() for token in q_tokens if len(token) > 3 and token not in ["what", "this", "rice"]):
+                kw_score += 0.15
+
+        # Apply intent priority boost
+        intent_bonus = detected_intents.get(t_key, 0.0)
+
+        # De-bias what_is_it: do not select what_is_it if a specific intent (like spray or dosage) was triggered
+        if t_key == "what_is_it" and any(k in detected_intents for k in ["treatment_spray", "dosage", "prevention", "spread", "fertilizer_advice"]):
+            intent_bonus -= 1.0
+
+        # Follow-up context bonus
+        context_bonus = 0.0
+        if is_follow_up:
+            if last_topic in ["treatment_spray", "dosage"] and t_key in ["dosage", "treatment_spray"]:
+                context_bonus += 0.35
+            elif last_topic == t_key:
+                context_bonus += 0.25
+
+        total_score = base_sim + kw_score + intent_bonus + context_bonus
+        scores.append((total_score, t_key, t_val))
+
+    scores.sort(key=lambda x: x[0], reverse=True)
+    top_score, top_key, top_val = scores[0] if scores else (0.0, None, {})
+
+    # Threshold for a confident match
+    CONFIDENCE_THRESHOLD = 0.18
+
+    if top_score < CONFIDENCE_THRESHOLD or not top_val:
+        log_unanswered_question(q_raw, disease=d_key, lang=lang)
+
+        # 2 closest suggestions
+        suggestions = []
+        for _, s_key, s_val in scores[:2]:
+            if s_val:
+                if lang == "ta":
+                    s_title = s_val.get("title_ta", s_key)
+                elif lang == "tanglish":
+                    s_title = s_val.get("title_tanglish") or s_val.get("title_en", s_key)
+                else:
+                    s_title = s_val.get("title_en", s_key)
+                suggestions.append({"topic_id": s_key, "title": s_title})
+
+        if lang == "ta":
+            fallback_answer = (
+                "மன்னிக்கவும், இதற்கான நேரடி விடை எனது ஆஃப்லைன் தகவல் தளத்தில் இன்னும் இல்லை. "
+                "உங்கள் கேள்வி வேளாண் வல்லுநரின் ஆய்வுக்குப் பதிவு செய்யப்பட்டுள்ளது."
+            )
+        elif lang == "tanglish":
+            fallback_answer = (
+                "Mannikkavum, intha kelvikku offline knowledge base-la ippo direct pathil illa. "
+                "Intha kelvi velanmai aluvalar review-kkaaga database-la save pannirukkom."
+            )
+        else:
+            fallback_answer = (
+                "I don't have a verified answer for that in my offline knowledge base yet. "
+                "I have logged this question for agricultural extension review."
+            )
+
+        return {
+            "topic_id": None,
+            "matched": False,
+            "answer": fallback_answer,
+            "title": "",
+            "suggestions": suggestions,
+            "lang": lang,
+            "confidence_score": top_score,
+        }
+
+    # Retrieve answer matching the user's language (Tamil / Tanglish / English)
+    if lang == "ta":
+        raw_answer = top_val.get("answer_ta", "")
+        title = top_val.get("title_ta", "")
+    elif lang == "tanglish":
+        raw_answer = top_val.get("answer_tanglish") or top_val.get("answer_en", "")
+        title = top_val.get("title_tanglish") or top_val.get("title_en", "")
+    else:
+        raw_answer = top_val.get("answer_en", "")
+        title = top_val.get("title_en", "")
+
+    # Inject live scan data if applicable
+    answer = raw_answer
+    if scan_data and top_key in ["severity_meaning", "treatment_spray", "what_is_it"]:
+        sev = scan_data.get("severity")
+        grade_val = scan_data.get("severity_grade") or ""
+        if sev is not None:
+            if lang == "ta":
+                metric_prefix = f"உங்கள் பரிசோதனை முடிவின்படி, இலையின் சேத அளவு {sev:.1f}% ({grade_val}). "
+            elif lang == "tanglish":
+                metric_prefix = f"Unga scan mudivupadi, ilaila {sev:.1f}% damage ({grade_val}) irukku. "
+            else:
+                metric_prefix = f"Based on your current scan, your leaf has {sev:.1f}% damage ({grade_val} grade). "
+            answer = f"{metric_prefix}{answer}"
+
+    # Secondary topic suggestions ("You may also want to know...")
+    suggestions = []
+    for sc, s_key, s_val in scores[1:3]:
+        if s_key != top_key and sc >= 0.15 and s_val:
+            if lang == "ta":
+                s_title = s_val.get("title_ta", s_key)
+            elif lang == "tanglish":
+                s_title = s_val.get("title_tanglish") or s_val.get("title_en", s_key)
+            else:
+                s_title = s_val.get("title_en", s_key)
+            suggestions.append({"topic_id": s_key, "title": s_title})
+
+    # Optional local Ollama rephrasing (if available and English)
+    if lang == "en":
+        answer = _try_ollama_rephrase(q_raw, answer)
+
+    return {
+        "topic_id": top_key,
+        "matched": True,
+        "answer": answer,
+        "title": title,
+        "suggestions": suggestions,
+        "lang": lang,
+        "confidence_score": top_score,
+    }
+
+
+def get_example_questions(disease: str, lang: str = "en") -> list[str]:
+    """Return 3 placeholder hint questions using the detected disease name in the requested language."""
+    d_clean = disease.replace("_", " ").title()
+    if lang == "ta":
+        d_name_ta = {
+            "blast": "குலை நோய்",
+            "blb": "இலைக்கருகல்",
+            "brown_spot": "பழுப்பு புள்ளி",
+            "healthy": "ஆரோக்கியமான நெல்",
+            "other": "இதர பயிர் கோளாறு",
+        }.get(disease.lower(), d_clean)
+        return [
+            f"இந்த {d_name_ta} எவ்வாறு பரவுகிறது?",
+            f"இதற்கு என்ன மருந்து தெளிக்க வேண்டும்?",
+            f"அடுத்த பருவத்தில் வராமல் தடுப்பது எப்படி?",
+        ]
+    elif lang == "tanglish":
+        d_name_tang = {
+            "blast": "Blast noi",
+            "blb": "Ilaikkarugal",
+            "brown_spot": "Pazhuppu pulli",
+            "healthy": "Aarokkiyamaana nel",
+            "other": "Paddy noi",
+        }.get(disease.lower(), d_clean)
+        return [
+            f"Intha {d_name_tang} eppadi spread aagum?",
+            f"Ithukku enna marunthu spray pannanum?",
+            f"Adutha season-la varama thadukkurathu eppadi?",
+        ]
+    else:
+        return [
+            f"How does {d_clean} spread?",
+            f"What medicine should I spray for this?",
+            f"How can I stop it from coming back next season?",
+        ]

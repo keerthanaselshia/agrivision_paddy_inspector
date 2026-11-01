@@ -1,0 +1,222 @@
+﻿import argparse
+import os
+import csv
+import hashlib
+import shutil
+from pathlib import Path
+from typing import List, Tuple, Dict
+import yaml
+import pandas as pd
+import numpy as np
+from tqdm import tqdm
+from PIL import Image
+import cv2
+import imagehash
+from collections import Counter
+
+# Load configuration
+def load_config(config_path: str) -> dict:
+    with open(config_path, 'r') as f:
+        return yaml.safe_load(f)
+
+# Supported image extensions
+IMG_EXTENSIONS = {'.jpg', '.jpeg', '.png', '.bmp', '.tif', '.tiff', '.webp'}
+
+def is_image(file_path: Path) -> bool:
+    return file_path.suffix.lower() in IMG_EXTENSIONS
+
+def compute_md5(file_path: Path) -> str:
+    hash_md5 = hashlib.md5()
+    with open(file_path, 'rb') as f:
+        for chunk in iter(lambda: f.read(8192), b''):
+            hash_md5.update(chunk)
+    return hash_md5.hexdigest()
+
+def compute_phash(file_path: Path) -> str:
+    try:
+        img = Image.open(file_path).convert('RGB')
+        return str(imagehash.phash(img))
+    except Exception:
+        return ''
+
+def laplacian_variance(image_path: Path) -> float:
+    try:
+        img = cv2.imdecode(np.fromfile(str(image_path), np.uint8), cv2.IMREAD_GRAYSCALE)
+        if img is None:
+            return 0.0
+        return cv2.Laplacian(img, cv2.CV_64F).var()
+    except Exception:
+        return 0.0
+
+def resize_keep_aspect(img: Image.Image, short_side: int = 256) -> Image.Image:
+    w, h = img.size
+    if w < h:
+        new_w = short_side
+        new_h = int(h * short_side / w)
+    else:
+        new_h = short_side
+        new_w = int(w * short_side / h)
+    return img.resize((new_w, new_h), Image.LANCZOS)
+
+def collect_source_images(raw_dir: Path) -> List[Tuple[Path, str, str]]:
+    """Return list of (filepath, source_name, class_name)"""
+    data = []
+    for source_path in raw_dir.iterdir():
+        if not source_path.is_dir():
+            continue
+        source_name = source_path.name
+        # Adjust for nested structures
+        if source_name == 'mendeley':
+            base = source_path / 'Rice Leaf Disease Images'
+        elif source_name == 'jay7080':
+            base = source_path / 'rice leaf diseases dataset'
+        else:
+            base = source_path
+        for class_dir in base.iterdir():
+            if not class_dir.is_dir():
+                continue
+            class_name = class_dir.name
+            for file_path in class_dir.rglob('*'):
+                if file_path.is_file() and is_image(file_path):
+                    data.append((file_path, source_name, class_name))
+    return data
+
+def main():
+    parser = argparse.ArgumentParser(description='Merge raw sources, clean, and prepare processed dataset')
+    parser.add_argument('--raw-dir', default='raw', help='Root raw directory')
+    parser.add_argument('--processed-dir', default='processed', help='Output processed directory')
+    parser.add_argument('--class-mapping', default='class_mapping.json', help='JSON file with source->target class mapping')
+    parser.add_argument('--config', default='config.yaml', help='Config file for thresholds')
+    parser.add_argument('--metadata', default='metadata.csv', help='Metadata CSV output path (inside processed)')
+    parser.add_argument('--removed-log', default='logs/removed.csv', help='CSV log of removed files')
+    args = parser.parse_args()
+
+    raw_root = Path(args.raw_dir)
+    processed_root = Path(args.processed_dir)
+    # Clear any previous processed data and metadata for a fresh run
+    if processed_root.exists():
+        shutil.rmtree(processed_root)
+    # Remove previous metadata CSV if it exists
+    metadata_path = Path(args.metadata)
+    if metadata_path.is_file():
+        metadata_path.unlink()
+    processed_root.mkdir(parents=True, exist_ok=True)
+    # Ensure removed log directory exists
+    os.makedirs(Path(args.removed_log).parent, exist_ok=True)
+
+    # Load mapping and config
+    import json
+    with open(args.class_mapping, 'r') as f:
+        class_map = json.load(f)
+    cfg = load_config(args.config)
+    blur_thresh = cfg.get('blur_threshold', 150)
+    near_dup_dist = cfg.get('phash_near_duplicate_dist', 5)
+    exclude_sources = cfg.get('exclude_sources', [])
+
+    # Gather images
+    all_images = collect_source_images(raw_root)
+
+    # Determine if mendeley should be excluded (based on inspect_sources output) – for simplicity we re‑run a quick check
+    # We'll read logs/sources.csv if exists
+    exclude_mendeley = False
+    sources_csv = Path('logs/sources.csv')
+    if sources_csv.is_file():
+        df = pd.read_csv(sources_csv)
+        note_row = df[(df['dataset'] == 'mendeley')]
+        if not note_row.empty and 'excluded' in str(note_row.iloc[0]['notes']).lower():
+            exclude_mendeley = True
+
+    # Prepare structures for duplicate detection
+    md5_set = set()
+    # Dictionary mapping target class to list of seen perceptual hash integers
+    seen_hashes: Dict[str, List[int]] = {}
+    removed_records = []
+    metadata_rows = []
+
+    # Counters per target class for naming
+    class_counters: Dict[str, int] = {}
+
+    for img_path, source, src_class in tqdm(all_images, desc='Processing images'):
+        if source in exclude_sources: continue
+        # Map source class to target class
+        target_class = class_map.get(src_class, 'other')
+        # Prepare target directory
+        target_dir = processed_root / target_class
+        target_dir.mkdir(parents=True, exist_ok=True)
+        # Compute properties
+        try:
+            img = Image.open(img_path)
+            img = img.convert('RGB')
+        except Exception:
+            removed_records.append([str(img_path), 'unreadable/corrupt'])
+            continue
+        width, height = img.size
+        if width < 100 or height < 100:
+            removed_records.append([str(img_path), 'too_small'])
+            continue
+        # Blur check
+        var = laplacian_variance(img_path)
+        if var < blur_thresh:
+            removed_records.append([str(img_path), f'blurry (variance={var:.2f})'])
+            continue
+        # MD5 duplicate check
+        md5 = compute_md5(img_path)
+        if md5 in md5_set:
+            removed_records.append([str(img_path), 'exact_duplicate_md5'])
+            continue
+        # Perceptual hash near‑duplicate check
+        # Perceptual hash near‑duplicate check
+        ph = compute_phash(img_path)
+        if ph:
+            ph_int = int(ph, 16)
+            class_hashes = seen_hashes.setdefault(target_class, [])
+            is_near_duplicate = False
+            for existing_int in class_hashes:
+                if bin(ph_int ^ existing_int).count('1') <= near_dup_dist:
+                    is_near_duplicate = True
+                    break
+            if is_near_duplicate:
+                removed_records.append([str(img_path), f'near_duplicate_phash (dist<={near_dup_dist})'])
+                continue
+            class_hashes.append(ph_int)
+        # Passed all checks – add to sets
+        md5_set.add(md5)
+
+        # Resize and convert to JPEG
+        img_resized = resize_keep_aspect(img)
+        # Naming
+        idx = class_counters.get(target_class, 0) + 1
+        class_counters[target_class] = idx
+        new_name = f"{source}_{target_class}_{idx}.jpg"
+        new_path = target_dir / new_name
+        img_resized.save(new_path, format='JPEG')
+        # Record metadata
+        metadata_rows.append([
+            new_name,
+            str(img_path),
+            source,
+            target_class,
+            width,
+            height,
+            md5,
+            ph,
+            ''  # group_id will be filled later
+        ])
+
+    # Write metadata CSV
+    metadata_df = pd.DataFrame(metadata_rows, columns=['new_filename', 'original_path', 'source', 'class', 'width', 'height', 'md5', 'phash', 'group_id'])
+    metadata_df.to_csv(Path(args.metadata), index=False)
+
+    # Write removed log
+    with open(args.removed_log, 'w', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(['file_path', 'reason'])
+        writer.writerows(removed_records)
+
+    print('Processing complete.')
+    print(f'Processed images saved under {processed_root}')
+    print(f'Metadata written to {args.metadata}')
+    print(f'Removed log written to {args.removed_log}')
+
+if __name__ == '__main__':
+    main()

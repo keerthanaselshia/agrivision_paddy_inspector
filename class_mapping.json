@@ -1,0 +1,13 @@
+{
+  "Bacterialblight": "blb",
+  "Blast": "blast",
+  "Brownspot": "brown_spot",
+  "Tungro": "other",
+  "Leafsmut": "other",
+  "bacterial_leaf_blight": "blb",
+  "brown_spot": "brown_spot",
+  "healthy": "healthy",
+  "leaf_blast": "blast",
+  "leaf_scald": "other",
+  "narrow_brown_spot": "other"
+}

@@ -1,0 +1,8 @@
+blur_threshold: 3
+phash_near_duplicate_dist: 5
+phash_group_dist: 10
+split_ratios:
+  train: 0.7
+  val: 0.15
+  test: 0.15
+seed: 42

@@ -1,0 +1,87 @@
+{
+  "blast": [
+    "static/disease_library/blast/ref_1.jpg",
+    "static/disease_library/blast/ref_2.jpg",
+    "static/disease_library/blast/ref_3.jpg"
+  ],
+  "blb": [
+    "static/disease_library/blb/ref_1.jpg",
+    "static/disease_library/blb/ref_2.jpg",
+    "static/disease_library/blb/ref_3.jpg"
+  ],
+  "brown_spot": [
+    "static/disease_library/brown_spot/ref_1.jpg",
+    "static/disease_library/brown_spot/ref_2.jpg",
+    "static/disease_library/brown_spot/ref_3.jpg"
+  ],
+  "sheath_blight": [
+    "static/disease_library/sheath_blight/ref_1.jpg",
+    "static/disease_library/sheath_blight/ref_2.jpg"
+  ],
+  "sheath_rot": [
+    "static/disease_library/sheath_rot/ref_1.jpg"
+  ],
+  "false_smut": [
+    "static/disease_library/false_smut/ref_1.jpg",
+    "static/disease_library/false_smut/ref_2.jpg",
+    "static/disease_library/false_smut/ref_3.jpg"
+  ],
+  "narrow_brown_spot": [
+    "static/disease_library/narrow_brown_spot/ref_1.jpg",
+    "static/disease_library/narrow_brown_spot/ref_2.jpg",
+    "static/disease_library/narrow_brown_spot/ref_3.jpg"
+  ],
+  "leaf_scald": [
+    "static/disease_library/leaf_scald/ref_1.jpg",
+    "static/disease_library/leaf_scald/ref_2.jpg",
+    "static/disease_library/leaf_scald/ref_3.jpg"
+  ],
+  "stem_rot": [
+    "static/disease_library/stem_rot/ref_1.jpg"
+  ],
+  "bakanae": [
+    "static/disease_library/bakanae/ref_1.jpg"
+  ],
+  "grain_discoloration": [
+    "static/disease_library/grain_discoloration/ref_1.jpg"
+  ],
+  "bacterial_leaf_streak": [
+    "static/disease_library/bacterial_leaf_streak/ref_1.jpg"
+  ],
+  "bacterial_panicle_blight": [
+    "static/disease_library/bacterial_panicle_blight/ref_1.jpg"
+  ],
+  "tungro": [
+    "static/disease_library/tungro/ref_1.jpg",
+    "static/disease_library/tungro/ref_2.jpg",
+    "static/disease_library/tungro/ref_3.jpg"
+  ],
+  "grassy_stunt": [
+    "static/disease_library/grassy_stunt/ref_1.jpg"
+  ],
+  "ragged_stunt": [
+    "static/disease_library/ragged_stunt/ref_1.jpg"
+  ],
+  "zinc_deficiency": [
+    "static/disease_library/zinc_deficiency/ref_1.jpg"
+  ],
+  "nitrogen_deficiency": [
+    "static/disease_library/nitrogen_deficiency/ref_1.jpg"
+  ],
+  "potassium_deficiency": [
+    "static/disease_library/potassium_deficiency/ref_1.jpg"
+  ],
+  "iron_toxicity": [
+    "static/disease_library/iron_toxicity/ref_1.jpg"
+  ],
+  "healthy": [
+    "static/disease_library/healthy/ref_1.jpg",
+    "static/disease_library/healthy/ref_2.jpg",
+    "static/disease_library/healthy/ref_3.jpg"
+  ],
+  "other": [
+    "static/disease_library/other/ref_1.jpg",
+    "static/disease_library/other/ref_2.jpg",
+    "static/disease_library/other/ref_3.jpg"
+  ]
+}
