@@ -10,3 +10,4 @@ folium
 streamlit-folium
 requests
 tflite-runtime
+pyarrow==16.1.0
